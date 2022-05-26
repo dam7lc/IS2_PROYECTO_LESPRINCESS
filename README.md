@@ -24,3 +24,6 @@
 ## Daniel Sánchez Cortés
 ### Rol: Equipo Scrum
 ### Correo: danielsanchez316@aragon.unam.mx
+## Miguel Angel Juárez Almaguer
+### Rol: Equipo Scrum
+### Correo: miguelalmaguer58@aragon.unam.mx
