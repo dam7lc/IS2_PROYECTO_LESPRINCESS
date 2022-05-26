@@ -1,4 +1,4 @@
-# IS2_PROYECTO_LESPRINCESS 
+# IS2_PROYECTO_LESPRINCESS
 
 ## Damián Gerardo Pérez Hernández
 ### Rol: Equipo Scrum
@@ -6,7 +6,7 @@
 ## Humberto Maldonado Guell
 ### Rol: Equipo Scrum
 ### Correo: humbertomaldonado25@aragon.unam.mx
-## Julio Ernesto Gonz Sánchez
+## Julio Ernesto González Sánchez
 ### Rol: Scrum Master
 ### Correo: juliogonzalez75@aragon.unam.mx
 ## Leonardo Santiago García
@@ -18,7 +18,7 @@
 ## Gabriela de Jesus Torres Elizarraras
 ### Rol: Equipo Scrum
 ### Correo: gabrielaelizarraras84@aragon.unam.mx
-## Esteban Hunab Ortega Chávez 
+## Esteban Hunab Ortega Chávez
 ### Rol: Equipo Scrum
 ### Correo: estebanortega316@aragon.unam.mx
 ## Daniel Sánchez Cortés
