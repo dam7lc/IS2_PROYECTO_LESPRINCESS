@@ -7,7 +7,8 @@ var logger = require('morgan');
 var indexRouter = require('./routes/index');
 var infoEquipoRouter = require('./routes/infoEquipo');
 var contenedordockerRouter = require('./routes/contenedordocker');
-var dockerfileRouter = require('./routes/dockerfile')
+var dockerfileRouter = require('./routes/dockerfile');
+var cicloVidaRouter = require('./routes/cicloVida');
 
 var app = express();
 
@@ -25,6 +26,7 @@ app.use('/', indexRouter);
 app.use('/infoEquipo', infoEquipoRouter);
 app.use('/contenedordocker', contenedordockerRouter);
 app.use('/dockerfile', dockerfileRouter);
+app.use('/cicloVida', cicloVidaRouter);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
