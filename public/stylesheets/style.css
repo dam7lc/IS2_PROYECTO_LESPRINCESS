@@ -3,6 +3,16 @@ body {
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
 }
 
+.nav-link .dropdown-toggle{
+  color: white !important;
+}
+
 a {
   color: #00B7FF;
+}
+
+.navbar-nav > li > .dropdown-toggle { 
+  color:white; 
+  font-size: 20px;
+  font-weight: 500;
 }
