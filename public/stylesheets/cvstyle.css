@@ -4,7 +4,9 @@
 
 h1
 {
-
+    font-family: 'Share Tech', sans-serif;
+    font-size: 35px;
+    font-weight: bold;
     margin-top: 3%;
     margin-bottom: auto;
     color:black;
@@ -13,23 +15,28 @@ h1
 }
 h2
 {
+    font-family: 'Share Tech', sans-serif;
     margin-top: 3%;
     color:black;
     text-align: center;
-    font-size: 20px;
+    font-size: 32px;
+    font-weight: bold;
 }
 
 
 p
 {
+    font-family: 'Share Tech', sans-serif;
     margin-top: 2%;
     color:black;
     margin-left: 75px;
     margin-right: 75px;
     align: center;
     text-align:justify;
+    font-size: 20px;
 
 }
+
 body
 {
 

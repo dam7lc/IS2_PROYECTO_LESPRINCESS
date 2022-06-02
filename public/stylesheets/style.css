@@ -11,8 +11,20 @@ a {
   color: #00B7FF;
 }
 
-.navbar-nav > li > .dropdown-toggle { 
-  color:white; 
+.navbar-nav > li > .dropdown-toggle {
+  color:white;
   font-size: 20px;
   font-weight: 500;
+}
+     /* Barra*/
+::-webkit-scrollbar {
+	width: 7px;
+  background: #DCD8D8;
+}
+::-webkit-scrollbar-track{
+  border: 7px solid: grey;
+}
+::-webkit-scrollbar-thumb {
+	background:#3C3C3C;
+	border-radius: 10px;
 }

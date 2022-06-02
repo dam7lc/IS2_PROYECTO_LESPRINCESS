@@ -1,21 +1,9 @@
 <link href="stylesheets/cvstyle.css" rel="stylesheet">
 <link href="stylesheets/boton.css" rel="stylesheet">
-
-<!--
-<div class="cv">
-
-    <h1>Ciclos de vida de un contenedor</h1>
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Share+Tech&display=swap" rel="stylesheet">
 
 
-      <p>El ciclo de vida del contenedor son las diferentes etapas por las que recorre un contenedor
-      Docker con distintos comandos. Comienza desde que hacemos la descarga desde Dokcer
-      Hub hasta que es removido o eliminado.</p>
-      <div style="text-align:center;">
-        <img src="/images/cvCiclo.jpg" alt="Ciclo de vida" width="481" height="290" align="center">
-      </div>
-    <h2></h2>
-</div>
--->
   <h1>Ciclos de vida de un contenedor</h1>
   <div class="grid-layout">
     <div class="box-a">
@@ -29,7 +17,7 @@
       </div>
     </div>
     <div class="box-c">
-      <h2 style="color:white; border-radius: 5px;">Comandos Docker en el ciclo de vida</h2>
+      <h2 style="color:white; border-radius: 5px; font-size: 28px;">Comandos Docker en el ciclo de vida</h2>
       <div class="c-boton">
 
         <a class="boton" href="#docker-create"><span>Docker Create</span></a>
@@ -50,8 +38,6 @@
       <p>Esto es útil cuando desea crear una configuración de contenedor con anticipación para que esté lista, liego ejecutarla cuando la necesite. El estado inicial del nuevo contenedor es created.</p>
       <h2>Uso</h2>
       <p style="text-align:center">docker create [OPTIONS] IMAGE [COMMAND] [ARG...]</p>
-      <h2>Opciones</h2>
-      <p>El listado de las opciones se detalla en la tabla de la documentación oficial, allí encontrará la información de cada opción y su descripción.</p>
       <h2>Ejemplo</h2>
       <p> Al ejecutar docker run con las siguientes opciones, crea un contenedor y lo deja creado sin iniciar.</p>
       <!--Run -->
@@ -60,8 +46,6 @@
       <p>El comando docker run primero crea una capa de contenedor grabable sobre la imagen especificada y luego la inicia usando el comando especificado. Es decir, la ejecución de Docker es equivalente a la API /containers/create then /containers/(id)/start. Un contenedor detenido se puede reiniciar con todos sus cambios anteriores intactos usando Docker Start. Vea docker ps -a para ver una lista de todos los contenedores.</p>
       <h2> Uso </h2>
       <p style="text-align:center">docker run [OPTIONS] IMAGE [COMMAND] [ARG...]</p>
-      <h2>Opciones</h2>
-      <p>El listado de las opciones se detalla en la tabla de la documentación oficial, allí encontrará la información de cada opción y su descripción.</p>
       <h2>Ejemplo</h2>
       <!--Start-->
       <h2 style="background-color:#42C2FF; color:#42C2FF">""</h2>
