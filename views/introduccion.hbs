@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+
+  <!-- <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Introduccion a Docker</title> -->
+    <link rel="stylesheet" href="/stylesheets/estilointro.css">
+<!--  </head> -->
+  <body>
+    <header>
+      <!--  <nav>
+          <a=[href="#"]>¿Que es docker?</a>
+          <a=[href="#"]>Componentes Docker</a>
+          <a=[href="#"]>Arquitectura Docker</a>
+          <a=[href="#"]>Ventajas</a>
+
+        </nav> -->
+
+        <section class="textos-header">
+            <h1>
+              Introduccion a Docker
+            </h1>
+        </section>
+        <div class="wave"  style="height: 150px; overflow: hidden;" ><svg viewBox="0 0 500 150" preserveAspectRatio="none"
+        style="height: 100%; width: 100%;"><path d="M0.00,49.98 C233.35,227.47 236.73,-41.92 500.00,49.98 L500.00,150.00 L0.00,150.00 Z"
+        style="stroke: none; fill: #f5cb8dab;"></path></svg></div>
+    </header>
+        <main>
+          <section class="contenedor sobre-nosotros">
+            <h2 class="titulo">¿Que es Docker?</h2>
+
+            <div class="contenedor-sobre-nosotros">
+                <img src="img/logo.jpeg" alt="" class="imagen-about-us">
+                <div class="contenido-textos">
+                  <h3><span>1</span></h3>
+                  <p>Docker nos permite realizar un empaquetado de aplicaciones en estructuras llamadas contenedores.
+                    Estos contenedores incluyen todo lo necesario para que el software se ejecute correctamente, como bibliotecas,
+                    herramientas del sistema, scripts, etc.</p>
+                  <h4><span>2</span></h4>
+                  <p>Los contenedores se encargan de aislar el sistema de ficheros, los procesos y la utilización de recursos del sistema.
+                    De esta forma no interfiere con sus vecinos en entornos cloud multitenant, en los que interesa que múltiples aplicaciones (tenants)
+                    compartan el mismo host para ahorrar en recursos y aumentar la eficiencia del sistema.</p>
+                </div>
+            </div>
+          </section>
+          <section class="componentes">
+            <div class="contenedor">
+              <h2 class="titulo">Componentes Docker</h2>
+               <p ><h2><u>Imagen:</h2></p></u> Es un paquete ejecutable, ligero e independiente, que contiene todo lo necesario para ejecutar cierto software. Una imagen se compone de múltiples capas, una por cada dockerfile definido.</p>
+               <p><h2><u>Docker Registry:</h2></u>  Es el lugar para almacenar imágenes y distribuirlas fácilmente. Existen registros públicos como Docker Hub o Docker Cloud. También se pueden almacenar en el registro local privado.</p>
+                <p><h2><u>Dockerfile:</h2> </u>Es un documento de texto con los comandos necesarios para ejecutar la imagen.</p>
+                <p><h2><u>Contenedor:</h2></u> Es una instancia en tiempo de ejecución de una imagen. Consiste en una aplicación aislada construida a partir de una o más imágenes. Los contenedores no empaquetan sistema operativo, sino que usan el del host.</p>
+              <div class="galeria-port">
+                <div class="imagen-port">
+
+                <img src="images/dockerimage.png" alt="">
+
+
+              </div>
+              <div class="imagen-port">
+                <img src="images/dockeregistry.png" alt="">
+
+              </div>
+              <div class="imagen-port">
+
+                <img src="images/dockerfileimagen.jpg" alt="">
+
+              </div>
+              <div class="imagen-port">
+
+                <img src="images/contenedor.png" alt="">
+                  </div>
+              </div>
+
+            </div>
+
+          </section>
+
+            <section class="arquitectura contenedor">
+              <h2 class="titulo">Arquitectura Docker</h2>
+              <p>La arquitectura Docker es una arquitectura cliente-servidor, dónde el cliente habla con el servidor (que es un proceso daemon) mediante un API para poder
+                gestionar el ciclo de vida de los contenedores y así poder construir, ejecutar y distribuir los contenedores.</p>
+                <img src="imagenes/arquitectura.png" alt="">
+              <p>Dentro de los elementos de la Arquitectura Docker encontramos dos, por un lado el elemento principal de la arquitectura
+                Docker que es el Docker Engine y por otro el Registro Docker.</p>
+                <div class="cards">
+                  <div class="card">
+                      <div class="contenido-texto-card">
+                        <h3><span></span>El Docker Engine es la aplicación cliente-servidor que implementa Docker. Esta aplicación tiene tres componentes:</h3>
+                        <p>Servidor: Es el proceso principal de Docker y que funciona como proceso demonio del sistema. Es el encargado de gestionar los objetos que hay en Docker
+                          como imágenes, contenedores, redes y volúmenes.
+                          Se representa mediante el comando dockerd.</p>
+                      <p>API Rest: Es un API Rest que nos permite acceder a las capacidades del servidor y ejecutar comandos sobre él. Podemos utilizar un simple curl
+                        para acceder a las capacidades del API de Docker</p>
+                      <p>Cliente: Es la línea de comandos representada por el comando docker. El cliente habla vía el API Rest para poder ejecutar los comandos.
+                        Es lo que utilizaremos para poder ir gestionando el ciclo de vida de nuestras imágenes y contenedores.</p>
+                      </div>
+                  </div>
+                  <div class="card">
+                      <div class="contenido-texto-card">
+                        <h3><span></span>Además del Docker Engine la Arquitectura Docker contiene otro elemento importante que son los registros Docker.</h3>
+                        <p>Los registros Docker (Docker Registry) son los que almacenan imágenes Docker. El Docker Hub es un registro público que almacena múltiples imágenes,
+                          algunas de ellas certificadas por Docker</p>
+                      <p>Por defecto, cuando ejecutamos un comando para crear un contenedor, se buscan las imágenes en Docker Hub. Si bien se pueden crear registros privados de
+                        imágenes mediante Docker Datacenter (DDC) y Docker Trusted Registry (DTR)</p>
+
+                      </div>
+                  </div>
+                </div>
+            </section>
+            <section class="ventajas">
+              <div class="contenedor-ventajas">
+                <h2 class="titulo">Ventajas de Docker</h2>
+                <div class="ventajas-cont">
+                  <div class="ventajas-ind">
+                    <img src="images/portabilidad1.png" alt="">
+                    <h3>Portabilidad</h3>
+                    <p> Permite conseguir el mismo funcionamiento en todas las máquinas y sistemas, ya que contiene todas sus propias dependencias.
+                      Resulta muy útil en las tareas de desarrollo, facilitando el entorno a medida que necesita la aplicación en cualquier ordenador.
+                      El uso de Docker incrementa el ritmo de producción de software y la productividad de los desarrolladores.</p>
+                    </div>
+
+                  <div class="ventajas-ind2">
+                    <img src="images/dockervm.jpg" alt="">
+                    <h3>Ligero</h3>
+                    <p> Además, al no contener el sistema operativo completo, la tecnología de contenedores es bastante más ligera que una máquina virtual (VM).Además, es compatible
+                      con Vagrant, que nos permite gestionar los contenedores y las máquinas virtuales de una manera más flexible
+                       y unificada. Esto se debe a que se construye la imagen y los contenedores por capas reutilizables.
+                       En concreto, contiene solamente las librerías, los ficheros y las configuraciones necesarias para ejecutar la aplicación.</p>
+
+                  </div>
+                  <div class="ventajas-ind3">
+                    <img src="images/precio.png" alt="">
+                    <h3>Costos</h3>
+                    <p> Las máquinas virtuales son más costosas de gestionar que los contenedores.
+                      Cada máquina virtual ejecuta un sistema operativo completo dentro del sistema operativo del host.
+                      Esta característica hace a los contenedores más eficientes y rápidos para ejecutar aplicaciones aisladas de su entorno.</p>
+                      </div>
+                  </div>
+              </div>
+
+            </section>
+        </main>
+
+  </body>
