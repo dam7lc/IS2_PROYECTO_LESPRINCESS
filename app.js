@@ -9,7 +9,8 @@ var infoEquipoRouter = require('./routes/infoEquipo');
 var contenedordockerRouter = require('./routes/contenedordocker');
 var dockerfileRouter = require('./routes/dockerfile');
 var cicloVidaRouter = require('./routes/cicloVida');
-var introduccionRouter = require('./routes/introduccion')
+var introduccionRouter = require('./routes/introduccion');
+var directivasRouter = require('./routes/directivas');
 
 var app = express();
 
@@ -28,7 +29,8 @@ app.use('/infoEquipo', infoEquipoRouter);
 app.use('/contenedordocker', contenedordockerRouter);
 app.use('/dockerfile', dockerfileRouter);
 app.use('/cicloVida', cicloVidaRouter);
-app.use('/introduccion', introduccionRouter)
+app.use('/introduccion', introduccionRouter);
+app.use('/directivas', directivasRouter);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {

@@ -1,0 +1,104 @@
+<link rel="stylesheet" href="/stylesheets/direc.css">
+<body>
+<div class="Basicas" style="margin-bottom: 20px"  >
+  <h6>Directivas Basicas</h6> <br>
+    <p>Un archivo Dockerfile es un archivo en formato de texto que contiene instrucciones dirigidas
+    al Docker Daemon para la construcción personalizada de una nueva imagen, una imagen
+    que cubra las necesidades específicas para un desarrollador. A estos comandos también se
+    les conoce como directivas docker. La siguiente es la sintaxis para la escritura de un
+    comando Docker.</p>
+      </div>
+    <div class="Basicas-foto">
+  <img src="/images/directivas1.png" alt="directivas" width="600" height="50"  align="center" style="margin-bottom: 20px">
+</div>
+<div class="Basicas_doc" style="margin-bottom: 20px">
+      <p>Un documento Dockerfile también puede ser documentado vía comentarios de desarrollador
+      al estilo UNIX/Linux, es decir con el carácter “#”, en el siguiente ejemplo se explica.</p>
+      </div>
+      <div class="foto_2" >
+
+      <img src="/images/directivas2.png" alt="directivas2" width="670" height="150" align="center" style="margin-bottom: 20px"> <br>
+      </div>
+      <div class="concepto" style="margin-bottom: 60px">
+      <p>Otro concepto importante es que la escritura de las directivas no distingue entre mayúsculas
+      y minúsculas se recomienda por buena práctica escribirla en mayúsculas. Esto mejorará el
+      mantenimiento de tus archivos Dockerfile. <br>
+      Una vez que se expusieron los conceptos básicos relacionados con la escritura de archivos
+      Dockerfile, iniciemos con la explicación de dos directivas básicas, la directiva FROM y la
+      directiva LABEL. </p>
+      </div>
+<div class="FROM" style="margin-bottom: 60px">
+        <h4>Directiva FROM.</h4>
+        <p>Como ya se explicó, un Dockerfile está orientado a crear imágenes personalizadas
+            basándose en plantillas existentes, para ello se usa la directiva FROM la cual especifica
+            cuál será la imagen base desde la cual se creará la nueva. Ahora, normalmente esta
+            imagen base es tomada del Docker registry oficial(hub.docker.com), sin embargo puedes
+            usar una imagen de tu propiedad almacenada en un registro local o el de tu organización.
+            La sintaxis para esta directiva que incluye la especificación del tag es: FROM <'nombre de la
+            imagen base'>:<'tag'>, si el tag no es establecido por defecto se establece el valor latest.</p>
+</div>
+<div class="LABEL" style="margin-bottom: 40px">
+          <h4>Directiva LABEL</h4> <br>
+          <p>Esta directiva está orientada a agregar metadatos a la imagen con el objetivo de organizar
+            las imágenes. Estos metadatos serán almacenados en la imagen por medio de un par
+            llave/valor con la sintaxis LABEL <'llave'>=<'valor'>. Por ejemplo si queremos agregar el
+            metadato para calificar la versión de la imagen se haría de la forma: LABEL version=0.0.1.</p>
+</div>
+  <div class="LABEL-foto">
+    <h5>Ejemplo LABEL</h5>
+            <img src="/images/directivas3.png" alt="directivas3" width="670" height="350" align="center" style="margin-bottom: 60px">
+          </div>
+          <div class="RUN" style="margin-bottom: 20px">
+              <h4>Directiva RUN</h4>
+              <p> La instrucción RUN especifica los comandos que se ejecutarán y se capturarán en la nueva
+                  imagen del contenedor. Estos comandos pueden incluir elementos como la instalación de
+                  software, la creación de archivos y directorios y la creación de la configuración del entorno.</p>
+                    </div>
+                  <div class="RUN-foto">
+                    <h5>Ejemplo RUN</h5>
+              <img src="/images/directivas4.png" alt="directivas4" width="670" height="250" align="center" style="margin-bottom: 50px">
+                </div>
+<div class="CMD" style="margin-bottom: 10px">
+                <h4>Directiva CMD</h4>
+                <p>La instrucción CMD establece que el comando predeterminado se ejecutará al implementar
+                  una instancia de la imagen del contenedor. Por ejemplo, si el contenedor va a hospedar un
+                  servidor web NGINX, CMD puede incluir instrucciones para iniciar el servidor web con un comando como nginx.exe.
+                  Si se especifican varias instrucciones CMD en un archivo Dockerfile, solo se evalúa la última.</p>
+</div>
+                <div class="CMD-foto">
+                    <h5>Ejemplo CMD</h5>
+                  <img src="/images/directivas5.png" alt="directivas5" width="670" height="150" align="center"  style="margin-bottom: 50px">
+</div>
+<div class="ENTRYPOINT" style="margin-bottom: 20px">
+                  <h4>Directiva ENTRYPOINT</h4> <br>
+                    <p>Se utiliza para ejecutar un comando por defecto al correr un contenedor, pero no está
+                    pensado para que se le pasen argumentos al correr el contenedor. La idea es utilizar
+                    entrypoint como si fuera un ejecutable y ejecute un comando por defecto al iniciar el
+                    contendor. </p>
+                    </div>
+                    <div class="ENTRYPOINT-foto">
+                  <h5>Ejemplo ENTRYPOINT</h5>
+                  <img src="/images/directivas6.png" alt="directivas6" width="900" height="100" align="center" style="margin-bottom: 60px"> <br>
+                    </div>
+              <div class="ADD" style="margin-bottom: 60px">
+                  <br><h4>Directiva ADD </h4>
+                  <p>Su función básica es copiar los sistemas de archivos en el contenedor de destino del
+                  sistema de archivos del sistema de origen ingresando dos parámetros, el origen y el
+                  destino. Si la fuente es una URL, el contenido de la URL se descargará y se copiará en el
+                  contenedor. </p>
+                  </div>
+
+                  <div class="COPY" style="margin-bottom: 60px">
+                  <h4>Directiva COPY</h4>
+                  <p>Copia archivos y directorios en el sistema de archivos del contenedor. Los archivos y los
+                  directorios deben encontrarse en una ruta de acceso relativa al archivo Dockerfile. </p>
+                </div>
+
+                <div class="WORKDIR" style="margin-bottom: 60px">
+                  <h4>Directiva WORKDIR</h4>
+                  <p>Se usa para configurar el directorio de trabajo del contenedor, después de ejecutar esta
+                  directiva todos los comandos se ejecutarán con la ruta de trabajo establecida a la ruta
+                  proporcionada.</p>
+                  </div>
+
+</body >

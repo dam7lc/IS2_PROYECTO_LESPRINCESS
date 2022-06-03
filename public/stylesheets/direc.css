@@ -1,0 +1,132 @@
+body {
+  background-image: url("https://img.freepik.com/vector-gratis/fondo-pintura-acuarela-rosa-vibrante_53876-58930.jpg?w=2000");
+  background-attachment: fixed
+}
+.Basicas{
+  height: 250px;
+  width: 650px;
+  text-align: center;
+  margin: 0 auto;
+  margin-top: 3%;
+  border: #716a42 4px solid;
+}
+.Basicas-foto{
+
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+
+}
+
+.Basicas_doc{
+  height: 150px;
+  width: 650px;
+  text-align: center;
+  margin: 0 auto;
+  border: #716a42 4px solid;
+}
+
+.foto_2{
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.concepto{
+  height: 150px;
+  width: 650px;
+  text-align: center;
+  margin: 0 auto;
+  border: #716a42 4px solid;
+}
+
+.FROM{
+  height: 350px;
+  width: 650px;
+  text-align: center;
+  margin: 0 auto;
+  border: #716a42 4px solid;
+
+}
+
+.LABEL{
+  height: 350px;
+  width: 650px;
+  text-align: center;
+  margin: 0 auto;
+  border: #716a42 4px solid;
+
+}
+
+.LABEL-foto{
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+
+}
+.RUN{
+  height: 350px;
+  width: 650px;
+  text-align: center;
+  margin: 0 auto;
+  border: #716a42 4px solid;
+}
+
+.RUN-foto{
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.CMD{
+  height: 350px;
+  width: 650px;
+  text-align: center;
+  margin: 0 auto;
+  border: #716a42 4px solid;
+}
+
+.CMD-foto{
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+
+}
+
+.ENTRYPOINT{
+  height: 350px;
+  width: 650px;
+  text-align: center;
+  margin: 0 auto;
+  border: #716a42 4px solid;
+}
+
+.ENTRYPOINT-foto{
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.ADD{
+  height: 350px;
+  width: 650px;
+  text-align: center;
+  margin: 0 auto;
+  border: #716a42 4px solid;
+}
+
+.COPY{
+  height: 350px;
+  width: 650px;
+  text-align: center;
+  margin: 0 auto;
+  border: #716a42 4px solid;
+}
+
+.WORKDIR{
+  height: 350px;
+  width: 650px;
+  text-align: center;
+  margin: 0 auto;
+  border: #716a42 4px solid;
+}
