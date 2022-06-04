@@ -1,0 +1,56 @@
+
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-6">
+                <div class="card mb-4 mt-5">
+                    <a><img class="card-img-top" src="/images/dockerfile2.webp" alt="..." /></a>
+                </div>
+
+                
+            </div>
+
+            <div class="col-lg-6">
+                <div class="card mb-4 mt-5">
+                    <div class="card-header h3">Archivo Dockerfile</div>
+                    <div class="card-body lead">Un Dockerfile es un archivo de texto plano que contiene una serie de instrucciones necesarias para crear una imagen que, posteriormente, se convertirá en una sola aplicación utilizada para un determinado propósito. La base del funcionamiento de Docker es mediante Dockerfiles.
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <!-- Blog post-->
+                <div class="card mb-4">
+                    <div class="card-body">
+                        <h2 class="card-title h4">Introduccion</h2>
+                        <p class="card-text lead">Antes de hablar de los Dockerfiles vamos a hablar un poco del comando docker build que es el que ejecutaremos una vez tenemos las instrucciones a seguir en un archivo.</p>
+
+                        <p class="card-text lead">El comando docker build arma una imágen siguiendo las instrucciones de un DockerFile que se puede encontrar en el directorio actual o un repositorio. La creación de la imágen es ejecutada por el daemon de Docker. Es importante tener en cuenta que docker build le manda todo el contexto del directorio actual al daemon, por lo que es buena práctica colocar el DockerFile en un directorio limpio y agregar los archivos necesarios en ese directorio en caso de ser necesario.</p>
+
+                        <p class="card-text lead">El Docker Daemon corre las instrucciones en un Dockerfile linea por linea y va lanzando los resultados en pantalla. Un punto importante es que cada instrucción es ejecutada en nuevas imágenes, hasta que muestra el ID de la imágen resultante una vez finalizada las instrucciones, el daemon irá haciendo una limpieza automáticamente de las imágenes intermedias.</p>
+
+                        <p class="card-text lead">Nota: Dicho esto de que el Docker daemon va creando imágenes intermedias durante la creación de la imágen, si por ejemplo en un comando ejecutamoscd /scripts/ y en otra linea le mandamos a ejecutar un script no va a funcionar, ya que ha lanzado otra imágen intermedia. Teniendo esto en cuenta, la manera correcta de hacerlo sería cd /scripts/ ; ./install.sh</p>
+
+                        <p class="card-text lead">Ahora, viene otra pregunta, como nos ayuda todo esto de las Imágenes intermedias o Cache? Si por alguna razón la creación de la imágen falla, ya sea por un comando mal digitado en el archivo, o lo que sea, cuando corregimos el Dockerfile, este no iniciará todo el proceso nuevamente, sino, que hará uso de las imágenes intermedias, y continuará la creación en el punto donde falló.</p>
+
+                        <p class="card-text lead">Ya que entendemos que es el Dockerfile, vamos a ver ahora el formato y las opciones que podemos pasarle.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <!-- Blog post-->
+                <div class="card mb-4">
+                    <a><img class="card-img-top" src="/images/dockerfile.png" alt="..." /></a>
+                    <div class="card-body">
+                        <h2 class="card-title h4">FROM</h2>
+                        <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis aliquid atque, nulla.</p>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+</body>
