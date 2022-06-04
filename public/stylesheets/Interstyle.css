@@ -100,7 +100,7 @@ button:hover{
 .container .emp{
   position: absolute;
   width: 500px;   /*height: 600px;*/
-  top: 90px;
+  top: 100px;
   right: 7%;
   bottom: 0;
   z-index: 999;
@@ -109,6 +109,7 @@ button:hover{
   position: absolute;
   height: 500px;
   width: 500px;
+  top: 100px;
   right: 4%;
   bottom: 0;
 }

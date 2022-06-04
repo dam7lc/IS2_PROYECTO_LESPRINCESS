@@ -33,63 +33,117 @@
     </div>
     <div class="box-d">
       <!--Create-->
-      <h2 id="docker-create">Docker Create</h2>
+      <h2 id="docker-create" style="background-color:white; color:white">" "</h2>
+      <h2>Docker Create</h2>
       <p>El comando docker create, crea una capa de contenedor grabable sobre la imagen especificada y la prepara para ejecutar con un comando especificado. La identificación del contenedor se imprime en STDOUT. Esto es similar a docker run -d excepto que el contenedor nunca se inicia. Luego puede usar el docker start para iniciar el contenedor en cualquier momento.</p>
-      <p>Esto es útil cuando desea crear una configuración de contenedor con anticipación para que esté lista, liego ejecutarla cuando la necesite. El estado inicial del nuevo contenedor es created.</p>
-      <h2>Uso</h2>
-      <p style="text-align:center">docker create [OPTIONS] IMAGE [COMMAND] [ARG...]</p>
-      <h2>Ejemplo</h2>
-      <p> Al ejecutar docker run con las siguientes opciones, crea un contenedor y lo deja creado sin iniciar.</p>
+      <p>Esto es útil cuando desea crear una configuración de contenedor con anticipación para que esté lista, luego ejecutarla cuando la necesite. El estado inicial del nuevo contenedor es created.</p>
+      
       <!--Run -->
-      <h2 style="background-color:#42C2FF; color:#42C2FF">""</h2>
-      <h2 id="docker-run">Docker Run</h2>
+      <h2 id="docker-run" style="background-color:#42C2FF; color:#42C2FF">""</h2>
+      <h2 >Docker Run</h2>
       <p>El comando docker run primero crea una capa de contenedor grabable sobre la imagen especificada y luego la inicia usando el comando especificado. Es decir, la ejecución de Docker es equivalente a la API /containers/create then /containers/(id)/start. Un contenedor detenido se puede reiniciar con todos sus cambios anteriores intactos usando Docker Start. Vea docker ps -a para ver una lista de todos los contenedores.</p>
       <h2> Uso </h2>
       <p style="text-align:center">docker run [OPTIONS] IMAGE [COMMAND] [ARG...]</p>
       <h2>Ejemplo</h2>
+      <div style="text-align:center;">
+        <img src="/images/d-run.png" alt="Docker run" align="center">
+        <h2 style="background-color:white; color:white">" "</h2>
+        <img src="/images/d-run2.png" alt="Docker run2" align="center">
+      </div>
+
+      <p>No nos muestra nada, pero se ejecutó de manera exitosa. Pensaríamos que la imagen pasó al estado STARTED, sin embargo no es así, ya que únicamente le
+         indicamos que iniciara pero no que se ejecutara como DEAMON, es decir, que se ejecutara en segundo plano para la escucha de peticiones, por lo que pasó
+         directamente al estado EXITED</p>
+      <p>Si queremos mantenerlo en el estado STARTED basta con ingresar el siguiente comando donde -i indicamos que va ser interactivo y -d que lo queremos
+         mantener como DEAMON.</p>
+      <div style="text-align:center;">
+        <img src="/images/d-run4.png" alt="Docker run4">
+        <h2 style="background-color:white; color:white">" "</h2>
+        <img src="/images/d-run3.png" alt="Docker run3">
+      </div>
       <!--Start-->
-      <h2 style="background-color:#42C2FF; color:#42C2FF">""</h2>
-      <h2 id="docker-start">Docker Start</h2>
+      <h2 id="docker-start" style="background-color:#42C2FF; color:#42C2FF">""</h2>
+      <h2>Docker Start</h2>
       <p > Iniciar uno o más contenedores detenidos.</p>
       <h2>Uso</h2>
       <p style="text-align:center"> docker start [OPTIONS] CONTAINER [CONTAINER...]</p>
       <h2>Ejemplo</h2>
       <p>Al ejecutar docker start con el identificador del contenedor, este lo inicia si esta detenido.</p>
+      <div style="text-align:center;">
+        <img src="/images/d-start.png" alt="Docker Start">
+        <h2 style="background-color:white; color:white">" "</h2>
+        <img src="/images/d-start2.png" alt="Docker Start2">
+      </div>
       <!--Stop-->
-      <h2 style="background-color:#42C2FF; color:#42C2FF">""</h2>
-      <h2 id="docker-stop">Docker Stop</h2>
+      <h2 id="docker-stop" style="background-color:#42C2FF; color:#42C2FF">""</h2>
+      <h2 >Docker Stop</h2>
       <p>Detener uno o más contenedores en ejecución.</p>
       <h2>Uso</h2>
       <p style="text-align:center">docker stop [OPTIONS] CONTAINER [CONTAINER...]</p>
       <h2>Ejemplo</h2>
+      <p>Si deseamos detener el contenedor que está en ejecución, ingresamos el siguiente comando aunque necesitaremos el ID del contenedor. Podemos obtenerlo listando
+        los contenedores</p>
+      <div style="text-align:center;">
+        <img src="/images/d-stop.png" alt="Docker Stop">
+        <h2 style="background-color:white; color:white">" "</h2>
+        <img src="/images/d-stop2.png" alt="Docker Stop2">
+      </div>
+      <p>Observamos el ID del contenedor por lo que el comando se ejecutó de manera exitosa. Ahora el contenedor paso al estado EXITED</p>
       <!--Restart-->
-      <h2 style="background-color:#42C2FF; color:#42C2FF">""</h2>
-      <h2 id="docker-restart">Docker Restart</h2>
+      <h2 id="docker-restart" style="background-color:#42C2FF; color:#42C2FF">""</h2>
+      <h2>Docker Restart</h2>
       <p>Detener uno o más contenedores en ejecución.</p>
       <h2>Uso</h2>
       <p style="text-align:center">docker stop [OPTIONS] CONTAINER [CONTAINER...]</p>
       <h2>Ejemplo</h2>
+      <p>Si queremos reiniciar el contenedor ejecutado ingresamos el siguiente comando con el ID del contenedor.</p>
+      <div style="text-align:center;">
+        <img src="/images/d-restart.png" alt="Docker restart">
+        <h2 style="background-color:white; color:white">" "</h2>
+        <img src="/images/d-restart2.png" alt="Docker restart2">
+      </div>
       <!--Pause-->
-      <h2 style="background-color:#42C2FF; color:#42C2FF">""</h2>
-      <h2 id="docker-pause">Docker Pause</h2>
+      <h2 id="docker-pause" style="background-color:#42C2FF; color:#42C2FF">""</h2>
+      <h2 >Docker Pause</h2>
       <p>El comando docker pause suspende todos los procesos en los contenedores especificados. En Linux, esto usa el congelador cgroup. Tradicionalmente, cuando se suspende un proceso, se utiliza la señal SIGSTOP, que se puede observar cuando el proceso se suspende. Con el congelador cgroup, el proceso no es consciente y no puede capturar, que se está suspendiendo, y posteriormente se reanuda. </p>
       <h2>Uso</h2>
       <p style="text-align:center">docker pause CONTAINER [CONTAINER...]</p>
       <h2>Ejemplo</h2>
+      <p>Ahora mandaremos al contenedor al estado PAUSED con el siguiente comando.</p>
+      <div style="text-align:center;">
+        <img src="/images/d-pause.png" alt="Docker pause">
+        <h2 style="background-color:white; color:white">" "</h2>
+        <img src="/images/d-pause2.png" alt="Docker pause2">
+      </div>
+      <p>Observamos que se ejecutó de manera exitosa mostrando el ID.</p>
       <!--Unpause-->
-      <h2 style="background-color:#42C2FF; color:#42C2FF">""</h2>
-      <h2 id="docker-unpause">Docker Unpause</h2>
+      <h2 id="docker-unpause" style="background-color:#42C2FF; color:#42C2FF">""</h2>
+      <h2 >Docker Unpause</h2>
       <p> El comando docker unpause anula la suspensión de todos los procesos en los contenedores especificados. En Linux, hace esto usando el congelador cgroup.</p>
       <h2>Uso</h2>
       <p style="text-align:center">docker unpause CONTAINER [CONTAINER...]</p>
       <h2>Ejemplo</h2>
+      <p>Si deseamos volver a mandar el conten  al estado STARTED basta con ingresar el siguiente comando con el ID del contenedor.</p>
+      <div style="text-align:center;">
+        <img src="/images/d-unpause.png" alt="Docker unpause">
+        <h2 style="background-color:white; color:white">" "</h2>
+        <img src="/images/d-unpause2.png" alt="Docker unpause2">
+      </div>
       <!--rm-->
-      <h2 style="background-color:#42C2FF; color:#42C2FF">""</h2>
-      <h2 id="docker-rm">Docker RM</h2>
+      <h2 id="docker-rm" style="background-color:#42C2FF; color:#42C2FF">""</h2>
+      <h2>Docker RM</h2>
       <p>Retire uno o más contenedores.</p>
       <h2>Uso</h2>
       <p style="text-align:center">docker rm [OPTIONS] CONTAINER [CONTAINER...]</p>
       <h2>Ejemplo</h2>
+      <p>Si deseamos pasar al estado DELETED tendremos que pasar forzosamente al estado EXITED, para eso debemos de ejecutar el comando ya visto docker
+       container stop con el ID del contenedor y a continuación el siguiente comando:</p>
+       <div style="text-align:center;">
+         <img src="/images/d-rm.png" alt="Docker rm">
+         <h2 style="background-color:white; color:white">" "</h2>
+         <img src="/images/d-rm2.png" alt="Docker rm2">
+       </div>
+       <p>Vemos que efectivamente se ejecutó de manera correcta el comando por lo que pasamos al último estado DELETED</p>
     </div>
 
   </div>
