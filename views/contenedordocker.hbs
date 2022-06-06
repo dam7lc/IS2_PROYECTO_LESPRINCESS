@@ -1,32 +1,18 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Información</title>
-    <link rel="stylesheet" href="/stylesheets/estilos.css">
-</head>
+
+<link rel="stylesheet" href="/stylesheets/estilos.css">
 <body>
-    <nav>
-        <input type="checkbos" id="check">
-        <label for="check" class="checkbtn">
-            <i class="fa-solid fa-bars"></i>
-        </label>
-        <a href="#" class="enlace">
+    <nav class="t">
             <img src="img/logo.jpeg" alt="" class="logo">
-            <ul>
-                <li><a href="#">¿Qué son los Contenedores</a></li>
-                <li><a href="#">Caso de uso de Contenedores</a></li>
-                <li><a href="#">Funcionamiento Docker</a></li>
+            <ul class="t">
+                <li class="t"><a href="#Que">¿Qué son los Contenedores</a></li>
+                <li class="t"><a href="#Beneficios">Beneficios</a></li>
+                <li class="t"><a href="#Casos">Caso de uso de Contenedores</a></li>
             </ul>
-        </a>
     </nav>
-    <section></section>
 
 
 
-    <div>
+    <section id="Que" class="container">
         <h2 class="uno">¿Qué son los contenedores?</h2><br>
 
         <p>Los contenedores son una forma de virtualización del sistema operativo. Un solo contenedor se puede usar para ejecutar cualquier cosa,
@@ -36,8 +22,8 @@
             significativamente menor.En implementaciones de aplicaciones de mayor tamaño, se pueden poner en marcha varios contenedores como uno o varios clústeres
             de contenedores. Estos clústeres se pueden gestionar mediante un orquestador de contenedores, como Kubernetes.
         </p>
-    </div>
-    <div>
+    </section>
+    <section id="Beneficios" class="container mb-5">
         <h2>Beneficios de los contenedores</h2>
         <p>
             Los contenedores son una forma optimizada de crear, probar,
@@ -69,8 +55,8 @@
                   de DevOps para acelerar los ciclos de desarrollo, prueba y producción.</p>
             </li>
         </ul>
-    </div>
-    <div>
+    </section>
+    <section id="Casos" class="container">
         <h2>Caso de uso de Contenedores</h2>
         <p>
             Los contenedores son una forma optimizada de crear, probar, poner en marcha y volver a poner en marcha aplicaciones en varios entornos, desde un
@@ -99,7 +85,7 @@
             <p>Los contenedores se ponen en marcha para dar soporte a uno o varios procesos parecidos que,
                a menudo, se ejecutan en segundo plano, como las funciones ETL o los lotes de tareas.</p>
         </ul>
-        </div>
+        </section>
 
 </body>
 </html>
