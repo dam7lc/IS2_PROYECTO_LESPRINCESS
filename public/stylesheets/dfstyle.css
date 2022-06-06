@@ -1,0 +1,24 @@
+p{
+    margin-left: 150px;
+    margin-right: 150px;
+}
+body{
+    background: url("../images/fondoDF.jpg") no-repeat center fixed;
+    background-size: cover;
+}
+.nombre{
+    color:rgb(255,255,255);
+    font-size: 2em;
+    font-weight: 500;
+    margin-top: 20px;
+}
+.rol{
+    color:rgb(200,200,200);
+    font-size: 1.5em;
+    font-weight: 500;
+}
+.correo{
+    color:rgb(200,200,200);
+    font-weight:500;
+    font-size: 1.5em;
+}
