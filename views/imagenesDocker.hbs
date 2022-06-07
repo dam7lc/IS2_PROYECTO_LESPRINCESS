@@ -73,10 +73,34 @@
             </p>
             <h2 id="Pasos" style="background-color:#4d0686; color:#4d0686">""</h2>
             <h2>Pasos para crear una Imagen Docker</h2><br>
+            <p>
+                Vamos a ver un resumen de los pasos necesarios para crear una imagen en Docker.
+            </p>
+            <p>
+                -> Primero creamos nuestro Dockerfile, teniendo en cuenta la lista de instrucciones de los Dockerfile:
+            </p>
+            <p>
+                -> Después creamos la imagen con docker build, a partir del Dockerfile creado. ><br>
+                -> Y finalmente la ejecutamos con docker run.
+            </p>
             <h2 id="Crear" style="background-color:#4d0686; color:#4d0686">""</h2>
             <h2>Crear Imagen Docker</h2><br>
             <h2 id="Colocar" style="background-color:#4d0686; color:#4d0686">""</h2>
             <h2>Colocar Imágenes Docker</h2><br>
+            <p>
+                Colocar imágenes en un registro le permite almacenar fragmentos de la aplicación que son estáticos e inmutables,
+                 incluidas todas sus dependencias a nivel de marco. Después, esas imágenes se pueden versionar e implementar en
+                  varios entornos y, por tanto, proporcionar una unidad de implementación coherente. Los registros de imágenes 
+                  privados, ya sean hospedados localmente o en la nube, se recomiendan cuando: <br><br>
+                -> Las imágenes no deben compartirse públicamente por motivos de confidencialidad. <br>
+            
+                -> Quiere tener una latencia de red mínima entre las imágenes y el entorno de implementación elegido. Por ejemplo,
+                     si el entorno de producción es la nube de Azure, probablemente quiera almacenar las imágenes en Azure Container
+                      Registry, para que la latencia de red sea mínima. De forma similar, si el entorno de producción es local, puede
+                       tener un registro de confianza de Docker local disponible dentro de la misma red local.
+            
+            </p>
+            
             <h2 id="Listar" style="background-color:#4d0686; color:#4d0686">""</h2>
             <h2>Listar las Imágenes Docker</h2><br>
 
