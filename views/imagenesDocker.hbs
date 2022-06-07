@@ -9,24 +9,42 @@
           style="stroke: none; fill: #f5cb8dab;"></path></svg></div>
 </header>
 <body>
-    <div class="contenido">
-        <h1 id="d-BASICAS" style="background-color:white; color:white">"">
-        </h1>
-        <h2>
-            ¿Qué son las imágenes Docker?
-        </h2><br>
-        <h3>
-            Las imágenes Docker son plantillas (que incluyen una aplicación, los binarios y las librerías necesarias) 
-            que se utilizan para construir contenedores Docker y ejecutarlos (los contenedores ejecutarán una imagen 
-            previamente compilada).
-        </h3>
-        <h3>
-            También podemos decir que las imágenes Docker son instancias de un contenedor. Un contenedor se inicia ejecutando una 
-            imagen. El archivo Dockerfile define una imagen, y por tanto cómo será el contenedor que se creará a partir de 
-            esa imagen. Y ese Dockerfile contiene todos los comandos que normalmente se ejecutan manualmente para construir una 
-            imagen para Docker. Docker puede leer las instrucciones de el archivo Dockerfile y construir una imagen para Docker 
-            automáticamente.
-        </h3>
+    <div class="grid-layout">
+        <div class="contenido">
+            <h2 id="d-BASICAS" style="background-color:white; color:white">""></h2>
+            <h2>¿Qué son las imágenes Docker?</h2><br>
+            <p>
+                Las imágenes Docker son plantillas (que incluyen una aplicación, los binarios y las librerías necesarias) 
+                que se utilizan para construir contenedores Docker y ejecutarlos (los contenedores ejecutarán una imagen 
+                previamente compilada).
+            </p>
+            <p>
+                También podemos decir que las imágenes Docker son instancias de un contenedor. Un contenedor se inicia ejecutando una 
+                imagen. El archivo Dockerfile define una imagen, y por tanto cómo será el contenedor que se creará a partir de 
+                esa imagen. Y ese Dockerfile contiene todos los comandos que normalmente se ejecutan manualmente para construir una 
+                imagen para Docker. Docker puede leer las instrucciones de el archivo Dockerfile y construir una imagen para Docker 
+                automáticamente.
+            </p>
+
+            <h2>¿Cómo funciona?</h2><br>
+            <p>
+                Al usar Docker, un desarrollador crea una aplicación o un servicio y lo empaqueta, junto con sus dependencias, 
+                en una imagen de contenedor.
+            </p>
+            <p>
+                Para ejecutar la aplicación o el servicio, se crea una instancia de la imagen de la aplicación para crear un
+                 contenedor, que se ejecutará en el host de Docker. Inicialmente, los contenedores se prueban en un entorno de 
+                 desarrollo o un PC.
+
+            </p>
+            <p>
+                Los desarrolladores deben almacenar las imágenes en un registro, que actúa como una biblioteca de imágenes y es
+                 necesario cuando se implementa en orquestadores de producción. Docker mantiene un registro público a través de
+                  Docker Hub; otros proveedores ofrecen registros para distintas colecciones de imágenes, incluido Azure Container
+                   Registry. Como alternativa, las empresas pueden tener un registro privado local para sus propias imágenes de Docker.
+            </p>
+        </div>
+        
 
 
         </div>
