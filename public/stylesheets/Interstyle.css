@@ -113,8 +113,8 @@ p{
 
 .container .emp{
   position: absolute;
-  width: 500px;   /*height: 600px;*/
-  top: 100px;
+  width: 450px;   /*height: 600px;*/
+  top: 150px;
   right: 7%;
   bottom: 0;
   z-index: 999;
