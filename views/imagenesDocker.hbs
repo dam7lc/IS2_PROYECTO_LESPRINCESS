@@ -15,19 +15,27 @@
           style="height: 100%; width: 100%;"><path d="M0.00,49.98 C233.35,227.47 236.73,-41.92 500.00,49.98 L500.00,150.00 L0.00,150.00 Z"
           style="stroke: none; fill: #f5cb8dab;"></path></svg></div>
       </header>
-
     </div>
-    <div class="box-boton">
-      <div class="d-boton">
-        <a class="boton" href="#d-QUEES"><span>¿Qué son?</span></a>
-        <a class="boton" href="#d-FUNC"><span>Función</span></a>
-        <a class="boton" href="#d-LABEL"><span>Directiva LABEL</span></a>
 
+    <div class="box-a">
+        <h2 style="color:black; border-radius: 100px; font-size: 30px;">Información de las Imágenes Docker</h2>
+        <div class="a-boton">
+            <a class="boton" href="#Quees"><span>¿Qué son?</span></a>
+            <a class="boton" href="#Funcion"><span>Función</span></a>
+            <a class="boton" href="#Pasos"><span>Pasos</span></a>
+            <a class="boton" href="#docker-restart"><span>Crear Imagen</span></a>
+            <a class="boton" href="#docker-stop"><span>Colocar Imágenes</span></a>
+            <a class="boton" href="#docker-pause"><span>Listar Imágenes</span></a>
+
+        </div>
+    </div>
+    <div class="box-b">
+      <div style="text-align:right;">
+        <img src="/images/Docker-Img.png" alt="Imagenes Docker" width="380" height="270" align="right">
       </div>
-
     </div>
     <div class="contenido">
-            <h2 id="#d-QUEES" style="background-color:#4d0686; color:#4d0686">""</h2>
+            <h2 id="Quees" style="background-color:#4d0686; color:#4d0686">""</h2>
             <h2>¿Qué son las imágenes Docker?</h2><br>
             <p>
                 Las imágenes Docker son plantillas (que incluyen una aplicación, los binarios y las librerías necesarias) 
@@ -41,25 +49,29 @@
                 imagen para Docker. Docker puede leer las instrucciones de el archivo Dockerfile y construir una imagen para Docker 
                 automáticamente.
             </p>
-            <h2 id="d-FUNC" style="background-color:#4d0686; color:#4d0686">""</h2>
+            <h2 id="Funcion" style="background-color:#4d0686; color:#4d0686">""</h2>
             <h2>¿Cómo funciona?</h2><br>
             <p>
                 Al usar Docker, un desarrollador crea una aplicación o un servicio y lo empaqueta, junto con sus dependencias, 
-                en una imagen de contenedor.
+                en una imagen de contenedor. Para ejecutar la aplicación o el servicio, se crea una instancia de la imagen de la 
+                aplicación para crear un contenedor, que se ejecutará en el host de Docker. Inicialmente, los contenedores se prueban
+                 en un entorno de desarrollo o un PC.
             </p>
             <p>
-                Para ejecutar la aplicación o el servicio, se crea una instancia de la imagen de la aplicación para crear un
-                 contenedor, que se ejecutará en el host de Docker. Inicialmente, los contenedores se prueban en un entorno de 
-                 desarrollo o un PC.
+               Los desarrolladores deben almacenar las imágenes en un registro, que actúa como una biblioteca de imágenes y es
+                 necesario cuando se implementa en orquestadores de producción. Docker mantiene un registro público a través de
+                  Docker Hub; otros proveedores ofrecen registros para distintas colecciones de imágenes, incluido Azure Container
+                   Registry. Como alternativa, las empresas pueden tener un registro privado local para sus propias imágenes de Docker. 
 
             </p>
             <p>
-                Los desarrolladores deben almacenar las imágenes en un registro, que actúa como una biblioteca de imágenes y es
-                 necesario cuando se implementa en orquestadores de producción. Docker mantiene un registro público a través de
-                  Docker Hub; otros proveedores ofrecen registros para distintas colecciones de imágenes, incluido Azure Container
-                   Registry. Como alternativa, las empresas pueden tener un registro privado local para sus propias imágenes de Docker.
+                El registro es como una estantería donde las imágenes se almacenan y están disponibles para extraerlas con el fin de 
+                compilar contenedores que ejecuten servicios o aplicaciones web. Hay registros de Docker privados a nivel local y en la
+                 nube pública. Docker Hub es que un registro público mantenido por Docker; junto con Docker Trusted Registry, una
+                  solución a nivel empresarial, Azure ofrece Azure Container Registry. AWS, Google y otros también tienen registros
+                   de contenedor.
             </p>
-            <h2 id="d-RUN" style="background-color:#4d0686; color:#4d0686">""</h2>
+            <h2 id="Pasos" style="background-color:#4d0686; color:#4d0686">""</h2>
             </div>
             <div class="b-1">
             <div class="c-boton">
@@ -73,4 +85,4 @@
             </div>
         </div>
 
-</body >
+</body>
