@@ -1,8 +1,4 @@
 
-.info{
-
-    font-family:'Courier New', Courier, monospace;
-}
 h2{
     margin-top: 5%;
     color:white;
@@ -13,9 +9,17 @@ p{
     margin-right: 150px;
 }
 body{
+    background-color: #ffa9ba;
+}
+.container{
+
     background: url("../images/fondoEquipo.jpg") no-repeat center fixed;
     background-size: cover;
+    font-family: 'Share Tech', sans-serif;
+    position: relative;
+
 }
+
 .nombre{
     color:rgb(255,255,255);
     font-size: 2em;
