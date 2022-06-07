@@ -78,6 +78,19 @@
             </p>
             <p>
                 -> Primero creamos nuestro Dockerfile, teniendo en cuenta la lista de instrucciones de los Dockerfile:
+                <center>
+                    <li>ADD</li>
+                    <li>COPY</li>
+                    <li>ENV</li>
+                    <li>EXPOSE</li>
+                    <li>FROM</li>
+                    <li>LABEL</li>
+                    <li>STOPSIGNAL</li>
+                    <li>USER</li>
+                    <li>VOLUME</li>
+                    <li>WORKDIR</li>
+                </center>
+                
             </p>
             <p>
                 -> Después creamos la imagen con docker build, a partir del Dockerfile creado. ><br>
@@ -102,8 +115,22 @@
             </p>
             
             <h2 id="Listar" style="background-color:#4d0686; color:#4d0686">""</h2>
-            <h2>Listar las Imágenes Docker</h2><br>
+            <h2>Listar las Imágenes DOCKER disponibles en nuestro sistema</h2><br>
+            <p>
+                Y para ver las imagenes que tenemos ya descargadas y compiladas en nuestra máquina Docker ejecutaremos:<br>
+                docker image ls
 
+            
+            </p>
+            <div style="text-align:center;">
+                <img src="/images/ListarImg.jpg" alt="Listar Imagenes Docker" align="center">
+            </div>
+            <p>
+                Después podemos ejecutar esa aplicación con:<br>
+                docker run nombre_imagen<br><br>
+                Las imagenes podemos compartirlas por medio del registro. Y las etiquetaremos con: <br>
+                docker tag image username/repository:tag
+            </p>
             </div>
             <div class="b-1">
             <div class="c-boton">
