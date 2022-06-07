@@ -97,7 +97,58 @@
                 -> Y finalmente la ejecutamos con docker run.
             </p>
             <h2 id="Crear" style="background-color:#4d0686; color:#4d0686">""</h2>
-            <h2>Crear Imagen Docker</h2><br>
+            <h2>Crear una imagen Docker (Ejemplo creando un “Hola Mundo“)</h2><br>
+            <p>
+                Las imágenes Docker se crean con un archivo llamado Dockerfile. Crearemos una imagen creando el típico 
+                Hola Mundo (Hello World). Así que primero creamos un Dockerfile con este contenido:
+                <center>
+                    FROM alpine<br>
+                    CMD echo "hello-world"
+                </center>
+            </p>
+            <div style="text-align:center;">
+                <img src="/images/cr-img1.jpg" alt="Listar Imagenes Docker" align="center">
+            </div>
+            <p>
+                Después creamos la imagen de Docker:
+                <center>
+                    docker build -t hola .
+                </center>
+            </p>
+            <p>
+                Y finalmente la ejecutamos con:
+                <center>
+                    docker run hola
+                </center>
+            </p>
+            <div style="text-align:center;">
+                <img src="/images/cr-img2.jpg" alt="Listar Imagenes Docker" align="center">
+            </div>
+            <p>
+                Y en la sección de Contenedores podremos ver que el contenedor que se ha creado con la anterior imagen
+                 está creado y funcionando, aunque en este caso, si ha terminado su ejecución (solo saca por pantalla: hola mundo)
+                  ya no estaría en ejecución.
+            </p>
+            <div style="text-align:center;">
+                <img src="/images/cr-img3.jpg" alt="Listar Imagenes Docker" align="center">
+            </div>
+            <p>
+                Aunque también podemos verlo en la lista de contenedores creados, en Portainer.
+            </p>
+            <div style="text-align:center;">
+                <img src="/images/cr-img4.jpg" alt="Listar Imagenes Docker" align="center">
+            </div>
+            <p>
+                Sobre la imagen que hemos creado, podemos fijarnos en que la primera linea es:
+                <center>
+                    FROM alpine
+                </center>
+            </p>
+            <p>
+                La instrucción FROM inicializa una nueva etapa de compilación, y establece la imagen base para las instrucciones
+                 posteriores.<br>
+                 En este caso utiliza la imagen de ALPINE disponible en los repositorios públicos.
+            </p>
             <h2 id="Colocar" style="background-color:#4d0686; color:#4d0686">""</h2>
             <h2>Colocar Imágenes Docker</h2><br>
             <p>
