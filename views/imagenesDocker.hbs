@@ -1,17 +1,33 @@
-<link rel="stylesheet" href="/stylesheets/estilos.css">
+<link rel="stylesheet" href="/stylesheets/direc.css">
+<link rel="stylesheet" href="/stylesheets/boton2.css">
 <link rel="stylesheet" href="/stylesheets/boton-Sig.css">
-<header>
-    <section class="textos-header">
+<body>
+
+  <div class="grid-layout">
+
+    <div class="box-header">
+      <header>
+
+          <section class="textos-header">
               <h1>Imágenes Docker</h1>
           </section>
           <div class="wave"  style="height: 75px; overflow: hidden;" ><svg viewBox="0 0 500 150" preserveAspectRatio="none"
           style="height: 100%; width: 100%;"><path d="M0.00,49.98 C233.35,227.47 236.73,-41.92 500.00,49.98 L500.00,150.00 L0.00,150.00 Z"
           style="stroke: none; fill: #f5cb8dab;"></path></svg></div>
-</header>
-<body>
-    <div class="grid-layout">
-        <div class="contenido">
-            <h2 id="d-BASICAS" style="background-color:white; color:white">""></h2>
+      </header>
+
+    </div>
+    <div class="box-boton">
+      <div class="d-boton">
+        <a class="boton" href="#d-QUEES"><span>¿Qué son?</span></a>
+        <a class="boton" href="#d-FUNC"><span>Función</span></a>
+        <a class="boton" href="#d-LABEL"><span>Directiva LABEL</span></a>
+
+      </div>
+
+    </div>
+    <div class="contenido">
+            <h2 id="#d-QUEES" style="background-color:#4d0686; color:#4d0686">""</h2>
             <h2>¿Qué son las imágenes Docker?</h2><br>
             <p>
                 Las imágenes Docker son plantillas (que incluyen una aplicación, los binarios y las librerías necesarias) 
@@ -25,7 +41,7 @@
                 imagen para Docker. Docker puede leer las instrucciones de el archivo Dockerfile y construir una imagen para Docker 
                 automáticamente.
             </p>
-
+            <h2 id="d-FUNC" style="background-color:#4d0686; color:#4d0686">""</h2>
             <h2>¿Cómo funciona?</h2><br>
             <p>
                 Al usar Docker, un desarrollador crea una aplicación o un servicio y lo empaqueta, junto con sus dependencias, 
@@ -43,20 +59,18 @@
                   Docker Hub; otros proveedores ofrecen registros para distintas colecciones de imágenes, incluido Azure Container
                    Registry. Como alternativa, las empresas pueden tener un registro privado local para sus propias imágenes de Docker.
             </p>
+            <h2 id="d-RUN" style="background-color:#4d0686; color:#4d0686">""</h2>
+            </div>
+            <div class="b-1">
+            <div class="c-boton">
+            <a class="boton" href="/introduccion"><span>Introducción</span></a>
+            </div>
+            </div>
+            <div class="b-2">
+            <div class="c-boton">
+            <a class="boton" href="/contenedordocker"><span>Contenedores</span></a>
+            </div>
+            </div>
         </div>
-        
 
-
-        </div>
-        <div class="b-1">
-        <div class="c-boton">
-          <a class="boton" href="/introduccion"><span>Introducción</span></a>
-        </div>
-        </div>
-        <div class="b-2">
-          <div class="c-boton">
-          <a class="boton" href="/contenedordocker"><span>Contenedores</span></a>
-        </div>
-        </div>
-    </div>
-</body>
+</body >
