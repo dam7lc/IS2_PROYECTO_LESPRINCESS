@@ -55,3 +55,15 @@
   transform: scale(500);
   background: #FFC371;
 }
+
+.img-boton{
+  width: 100%;
+  display: grid;
+  grid-template-columns: auto auto auto;
+
+  grid-column-gap: 10px;
+  grid-row-gap: 40px;
+  padding-left:20px;
+  padding-top:10px;
+
+}

@@ -17,9 +17,9 @@
       </header>
     </div>
 
-    <div class="box-a">
+    <div class="box-Img">
         <h2 style="color:black; border-radius: 100px; font-size: 30px;">Información de las Imágenes Docker</h2>
-        <div class="a-boton">
+        <div class="img-boton">
             <a class="boton" href="#Quees"><span>¿Qué son?</span></a>
             <a class="boton" href="#Funcion"><span>Función</span></a>
             <a class="boton" href="#Pasos"><span>Pasos</span></a>
@@ -38,22 +38,22 @@
             <h2 id="Quees" style="background-color:#4d0686; color:#4d0686">""</h2>
             <h2>¿Qué son las imágenes Docker?</h2><br>
             <p>
-                Las imágenes Docker son plantillas (que incluyen una aplicación, los binarios y las librerías necesarias) 
-                que se utilizan para construir contenedores Docker y ejecutarlos (los contenedores ejecutarán una imagen 
+                Las imágenes Docker son plantillas (que incluyen una aplicación, los binarios y las librerías necesarias)
+                que se utilizan para construir contenedores Docker y ejecutarlos (los contenedores ejecutarán una imagen
                 previamente compilada).
             </p>
             <p>
-                También podemos decir que las imágenes Docker son instancias de un contenedor. Un contenedor se inicia ejecutando una 
-                imagen. El archivo Dockerfile define una imagen, y por tanto cómo será el contenedor que se creará a partir de 
-                esa imagen. Y ese Dockerfile contiene todos los comandos que normalmente se ejecutan manualmente para construir una 
-                imagen para Docker. Docker puede leer las instrucciones de el archivo Dockerfile y construir una imagen para Docker 
+                También podemos decir que las imágenes Docker son instancias de un contenedor. Un contenedor se inicia ejecutando una
+                imagen. El archivo Dockerfile define una imagen, y por tanto cómo será el contenedor que se creará a partir de
+                esa imagen. Y ese Dockerfile contiene todos los comandos que normalmente se ejecutan manualmente para construir una
+                imagen para Docker. Docker puede leer las instrucciones de el archivo Dockerfile y construir una imagen para Docker
                 automáticamente.
             </p>
             <h2 id="Funcion" style="background-color:#4d0686; color:#4d0686">""</h2>
             <h2>¿Cómo funciona?</h2><br>
             <p>
-                Al usar Docker, un desarrollador crea una aplicación o un servicio y lo empaqueta, junto con sus dependencias, 
-                en una imagen de contenedor. Para ejecutar la aplicación o el servicio, se crea una instancia de la imagen de la 
+                Al usar Docker, un desarrollador crea una aplicación o un servicio y lo empaqueta, junto con sus dependencias,
+                en una imagen de contenedor. Para ejecutar la aplicación o el servicio, se crea una instancia de la imagen de la
                 aplicación para crear un contenedor, que se ejecutará en el host de Docker. Inicialmente, los contenedores se prueban
                  en un entorno de desarrollo o un PC.
             </p>
@@ -61,11 +61,11 @@
                Los desarrolladores deben almacenar las imágenes en un registro, que actúa como una biblioteca de imágenes y es
                  necesario cuando se implementa en orquestadores de producción. Docker mantiene un registro público a través de
                   Docker Hub; otros proveedores ofrecen registros para distintas colecciones de imágenes, incluido Azure Container
-                   Registry. Como alternativa, las empresas pueden tener un registro privado local para sus propias imágenes de Docker. 
+                   Registry. Como alternativa, las empresas pueden tener un registro privado local para sus propias imágenes de Docker.
 
             </p>
             <p>
-                El registro es como una estantería donde las imágenes se almacenan y están disponibles para extraerlas con el fin de 
+                El registro es como una estantería donde las imágenes se almacenan y están disponibles para extraerlas con el fin de
                 compilar contenedores que ejecuten servicios o aplicaciones web. Hay registros de Docker privados a nivel local y en la
                  nube pública. Docker Hub es que un registro público mantenido por Docker; junto con Docker Trusted Registry, una
                   solución a nivel empresarial, Azure ofrece Azure Container Registry. AWS, Google y otros también tienen registros
@@ -90,7 +90,7 @@
                     <li>VOLUME</li>
                     <li>WORKDIR</li>
                 </center>
-                
+
             </p>
             <p>
                 -> Después creamos la imagen con docker build, a partir del Dockerfile creado. ><br>
@@ -99,7 +99,7 @@
             <h2 id="Crear" style="background-color:#4d0686; color:#4d0686">""</h2>
             <h2>Crear una imagen Docker (Ejemplo creando un “Hola Mundo“)</h2><br>
             <p>
-                Las imágenes Docker se crean con un archivo llamado Dockerfile. Crearemos una imagen creando el típico 
+                Las imágenes Docker se crean con un archivo llamado Dockerfile. Crearemos una imagen creando el típico
                 Hola Mundo (Hello World). Así que primero creamos un Dockerfile con este contenido:
                 <center>
                     FROM alpine<br>
@@ -154,24 +154,24 @@
             <p>
                 Colocar imágenes en un registro le permite almacenar fragmentos de la aplicación que son estáticos e inmutables,
                  incluidas todas sus dependencias a nivel de marco. Después, esas imágenes se pueden versionar e implementar en
-                  varios entornos y, por tanto, proporcionar una unidad de implementación coherente. Los registros de imágenes 
+                  varios entornos y, por tanto, proporcionar una unidad de implementación coherente. Los registros de imágenes
                   privados, ya sean hospedados localmente o en la nube, se recomiendan cuando: <br><br>
                 -> Las imágenes no deben compartirse públicamente por motivos de confidencialidad. <br>
-            
+
                 -> Quiere tener una latencia de red mínima entre las imágenes y el entorno de implementación elegido. Por ejemplo,
                      si el entorno de producción es la nube de Azure, probablemente quiera almacenar las imágenes en Azure Container
                       Registry, para que la latencia de red sea mínima. De forma similar, si el entorno de producción es local, puede
                        tener un registro de confianza de Docker local disponible dentro de la misma red local.
-            
+
             </p>
-            
+
             <h2 id="Listar" style="background-color:#4d0686; color:#4d0686">""</h2>
             <h2>Listar las Imágenes DOCKER disponibles en nuestro sistema</h2><br>
             <p>
                 Y para ver las imagenes que tenemos ya descargadas y compiladas en nuestra máquina Docker ejecutaremos:<br>
                 docker image ls
 
-            
+
             </p>
             <div style="text-align:center;">
                 <img src="/images/ListarImg.jpg" alt="Listar Imagenes Docker" align="center">

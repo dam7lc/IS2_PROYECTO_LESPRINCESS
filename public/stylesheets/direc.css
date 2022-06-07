@@ -61,6 +61,11 @@ header .textos-header{
   background-color: none;
 }
 
+.box-Img{ 
+  grid-column: 1/2;
+  background-color: none;
+}
+
 .box-boton{
   grid-column: 1/4;
   background-color: none;
