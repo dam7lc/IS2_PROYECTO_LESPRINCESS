@@ -1,12 +1,6 @@
-<!DOCTYPE html>
+<link rel="stylesheet" href="/stylesheets/estilointro.css">
+<link rel="stylesheet" href="/stylesheets/boton-Sig.css">
 
-  <!-- <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Introduccion a Docker</title> -->
-    <link rel="stylesheet" href="/stylesheets/estilointro.css">
-<!--  </head> -->
   <body>
     <header>
       <!--  <nav>
@@ -22,7 +16,7 @@
               Introduccion a Docker
             </h1>
         </section>
-        <div class="wave"  style="height: 150px; overflow: hidden;" ><svg viewBox="0 0 500 150" preserveAspectRatio="none"
+        <div class="wave"  style="height: 75px; overflow: hidden;" ><svg viewBox="0 0 500 150" preserveAspectRatio="none"
         style="height: 100%; width: 100%;"><path d="M0.00,49.98 C233.35,227.47 236.73,-41.92 500.00,49.98 L500.00,150.00 L0.00,150.00 Z"
         style="stroke: none; fill: #f5cb8dab;"></path></svg></div>
     </header>
@@ -47,10 +41,14 @@
           <section class="componentes">
             <div class="contenedor">
               <h2 class="titulo">Componentes Docker</h2>
-               <p ><h2><u>Imagen:</h2></p></u> Es un paquete ejecutable, ligero e independiente, que contiene todo lo necesario para ejecutar cierto software. Una imagen se compone de múltiples capas, una por cada dockerfile definido.</p>
-               <p><h2><u>Docker Registry:</h2></u>  Es el lugar para almacenar imágenes y distribuirlas fácilmente. Existen registros públicos como Docker Hub o Docker Cloud. También se pueden almacenar en el registro local privado.</p>
-                <p><h2><u>Dockerfile:</h2> </u>Es un documento de texto con los comandos necesarios para ejecutar la imagen.</p>
-                <p><h2><u>Contenedor:</h2></u> Es una instancia en tiempo de ejecución de una imagen. Consiste en una aplicación aislada construida a partir de una o más imágenes. Los contenedores no empaquetan sistema operativo, sino que usan el del host.</p>
+              <h2>Imagen:</h2>
+              <p> Es un paquete ejecutable, ligero e independiente, que contiene todo lo necesario para ejecutar cierto software. Una imagen se compone de múltiples capas, una por cada dockerfile definido.</p>
+              <h2>Docker Registry:</h2>
+              <p>Es el lugar para almacenar imágenes y distribuirlas fácilmente. Existen registros públicos como Docker Hub o Docker Cloud. También se pueden almacenar en el registro local privado.</p>
+              <h2>Dockerfile:</h2>
+              <p>Es un documento de texto con los comandos necesarios para ejecutar la imagen.</p>
+              <h2>Contenedor:</h2>
+              <p> Es una instancia en tiempo de ejecución de una imagen. Consiste en una aplicación aislada construida a partir de una o más imágenes. Los contenedores no empaquetan sistema operativo, sino que usan el del host.</p>
               <div class="galeria-port">
                 <div class="imagen-port">
 
@@ -78,12 +76,16 @@
           </section>
 
             <section class="arquitectura contenedor">
+              <div class="arquitectura">
               <h2 class="titulo">Arquitectura Docker</h2>
               <p>La arquitectura Docker es una arquitectura cliente-servidor, dónde el cliente habla con el servidor (que es un proceso daemon) mediante un API para poder
                 gestionar el ciclo de vida de los contenedores y así poder construir, ejecutar y distribuir los contenedores.</p>
-                <img src="imagenes/arquitectura.png" alt="">
+
+                <img src="images/arquitectura.png" alt="">
+
               <p>Dentro de los elementos de la Arquitectura Docker encontramos dos, por un lado el elemento principal de la arquitectura
                 Docker que es el Docker Engine y por otro el Registro Docker.</p>
+              </div>
                 <div class="cards">
                   <div class="card">
                       <div class="contenido-texto-card">
@@ -97,6 +99,7 @@
                         Es lo que utilizaremos para poder ir gestionando el ciclo de vida de nuestras imágenes y contenedores.</p>
                       </div>
                   </div>
+                  <h3 style="background:#FFEFBA; color:#FFEFBA;">" "</h3>
                   <div class="card">
                       <div class="contenido-texto-card">
                         <h3><span></span>Además del Docker Engine la Arquitectura Docker contiene otro elemento importante que son los registros Docker.</h3>
@@ -111,7 +114,7 @@
             </section>
             <section class="ventajas">
               <div class="contenedor-ventajas">
-                <h2 class="titulo">Ventajas de Docker</h2>
+                <h2 class="titulo" style="background:none;">Ventajas de Docker</h2>
                 <div class="ventajas-cont">
                   <div class="ventajas-ind">
                     <img src="images/portabilidad1.png" alt="">
@@ -142,5 +145,18 @@
 
             </section>
         </main>
-
+        <section>
+        <div class="grid-layout">
+          <div class="b-1">
+          <div class="c-boton">
+            <a class="boton" href="/"><span>Inicio</span></a>
+          </div>
+          </div>
+          <div class="b-2">
+            <div class="c-boton">
+            <a class="boton" href="/imagenes"><span>Imagenes</span></a>
+          </div>
+          </div>
+        </div>
+        </section>
   </body>

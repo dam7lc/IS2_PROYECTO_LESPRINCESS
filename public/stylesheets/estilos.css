@@ -5,7 +5,7 @@
     list-style: none;
     box-sizing: border-box;
 }
-
+/*
 nav.t{
     background: #2fcdcd;
     height: 80px;
@@ -14,10 +14,7 @@ nav.t{
 .enlace{
     position: absolute;
     padding: 20px 50px;
-}
-.logo{
-    height: 80px;
-}
+
 
 nav ul.t{
     float: right;
@@ -28,7 +25,154 @@ nav ul li.t{
     line-height: 80px;
     margin: 0 5px;
 }
+*/
+header{
+  font-family: 'Share Tech', sans-serif;
+  width: 100%;
+  height: 150px;
+  background: #8360c3;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, hsla(161, 61%, 46%, 0.616), hsla(261, 45%, 57%, 0.616)), url(../public/img/logo.jpeg);
+  background: linear-gradient(to right, hsla(161, 61%, 46%, 0.616), hsla(261, 45%, 57%, 0.616)), url(../public/img/logo.jpeg); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background-size: cover;
+  background-attachment: fixed;
+  position: relative;
+  border-radius: 10px;
+}
 
+header .textos-header{
+  padding-top: 38px;
+  display: flex;
+  height: 430px;
+  width: 100%;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+
+
+}
+
+.textos-header h1{
+    font-size: 50px;
+    color: #fff;
+
+}
+
+
+.wave{
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  border-radius: 10px;
+}
+h2{
+  font-family: 'Share Tech', sans-serif;
+  margin-top: 3%;
+  color:black;
+  text-align: center;
+  font-size: 32px;
+  font-weight: bold;
+
+}
+h6{
+  margin-top: 3%;
+  margin-left: 12%;
+  color:black;
+  text-align: justify;
+  font-size: 20px;
+  font-weight: bold;
+}
+p{
+  font-family: 'Share Tech', sans-serif;
+  margin-top: 2%;
+  color:black;
+  margin-left: 75px;
+  margin-right: 75px;
+  align: center;
+  text-align:justify;
+  font-size: 20px;
+  background: none;
+
+}
+
+img{
+    border-radius: 10px;
+    align:center;
+}
+
+body
+{
+  background: #FFEFBA;
+  /*
+  background: -webkit-linear-gradient(to right, #FFFFFF, #FFEFBA);
+  background: linear-gradient(to right, #FFFFFF, #FFEFBA);
+
+  /*background-color: #42C2FF;
+
+  background: url("../images/cv.jpg") no-repeat center fixed;
+  background-size: cover;*/
+
+}
+
+.grid-layout
+{
+  display: grid;
+  grid-template-columns: auto auto auto;
+  grid-template-rows: auto;
+  grid-row-gap: 18px;
+  grid-column-gap: 18px;
+
+
+  width: 100%;
+  height: 100%;
+  margin: 0 auto;
+
+
+  border-radius: 5px;
+
+
+}
+
+.box-header{
+  grid-column: 1/4;
+  background-color: none;
+
+}
+
+.box-contenido{
+  grid-column: 1/2;
+  grid-row: 2/3;
+  background: white;
+  border-radius: 10px;
+}
+
+.box-beneficios{
+  grid-column: 3/4;
+  background: white;
+  border-radius: 10px;
+}
+
+.box-contenedor{
+  grid-column: 1/4;
+  background: white;
+  border-radius: 10px
+}
+.box-contenedor h6{
+  margin-left: 6%;
+}
+.b-1{
+  grid-column: 1/2;
+  background-color: none;
+  margin-left: 30%
+}
+.b-2{
+  grid-column: 3/4;
+  background-color:none;
+  margin-left: 45%;
+
+}
+
+
+/*
 li.t a {
     color: #fff;
     font-size: 18px;
@@ -62,10 +206,7 @@ section{
     height: calc(100vh - 80 px);
 }
 
-.uno{
-    text-align: center;
-    margin-top: 50px;
-}
+
 @media (max-width: 1000px){
     .enlace{
         padding-left: 200px;
@@ -103,4 +244,4 @@ section{
     #check:checked ~ ul{
         left: 0;
     }
-}
+} */

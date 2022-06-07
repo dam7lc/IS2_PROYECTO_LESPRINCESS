@@ -1,7 +1,8 @@
 
 <link rel="stylesheet" href="/stylesheets/estilos.css">
+<link rel="stylesheet" href="/stylesheets/boton-Sig.css">
 <body>
-    <nav class="t">
+  <!--  <nav class="t">
             <img src="img/logo.jpeg" alt="" class="logo">
             <ul class="t">
                 <li class="t"><a href="#Que">¿Qué son los Contenedores</a></li>
@@ -9,54 +10,62 @@
                 <li class="t"><a href="#Casos">Caso de uso de Contenedores</a></li>
             </ul>
     </nav>
+    -->
+  <div class="grid-layout">
+    <div class="box-header">
+      <header>
 
+          <section class="textos-header">
+              <h1>Contenedores</h1>
+          </section>
+          <div class="wave"  style="height: 75px; overflow: hidden;" ><svg viewBox="0 0 500 150" preserveAspectRatio="none"
+          style="height: 100%; width: 100%;"><path d="M0.00,49.98 C233.35,227.47 236.73,-41.92 500.00,49.98 L500.00,150.00 L0.00,150.00 Z"
+          style="stroke: none; fill: #f5cb8dab;"></path></svg></div>
+      </header>
 
-
-    <section id="Que" class="container">
-        <h2 class="uno">¿Qué son los contenedores?</h2><br>
-
+      </div>
+      <div class="box-contenido">
+        <h2>¿Qué son los contenedores?</h2><br>
         <p>Los contenedores son una forma de virtualización del sistema operativo. Un solo contenedor se puede usar para ejecutar cualquier cosa,
             desde un microservicio o un proceso de software a una aplicación de mayor tamaño. Dentro de un contenedor se encuentran todos los ejecutables,
-            el código binario, las bibliotecas y los archivos de configuración necesarios.Sin embargo, en comparación con los métodos de virtualización
-            de máquinas o servidores, los contenedores no contienen imágenes del sistema operativo. Esto los hace más ligeros y portátiles, con una sobrecarga
-            significativamente menor.En implementaciones de aplicaciones de mayor tamaño, se pueden poner en marcha varios contenedores como uno o varios clústeres
+            el código binario, las bibliotecas y los archivos de configuración necesarios.
+        </p>
+        <p> Sin embargo, en comparación con los métodos de virtualización de máquinas o servidores, los contenedores no contienen imágenes del sistema operativo. Esto los hace más ligeros y portátiles, con una sobrecarga
+            significativamente menor.</p>
+        <p> En implementaciones de aplicaciones de mayor tamaño, se pueden poner en marcha varios contenedores como uno o varios clústeres
             de contenedores. Estos clústeres se pueden gestionar mediante un orquestador de contenedores, como Kubernetes.
         </p>
-    </section>
-    <section id="Beneficios" class="container mb-5">
-        <h2>Beneficios de los contenedores</h2>
+        <img src="/images/Docker-C.png" alt="Contenedor" width="100%" height="40%" align="center";>
+      </div>
+      <div class="box-beneficios">
+        <h2>Beneficios de los contenedores</h2><br>
         <p>
             Los contenedores son una forma optimizada de crear, probar,
             poner en marcha y volver a poner en marcha aplicaciones en varios entornos,
             desde un portátil local de un desarrollador hasta un centro de datos on-premises e incluso en la nube.
             Algunos de los beneficios de los contenedores son:
-        </p>
-        <br>
-        <ul>
+        </p><br
+          <ul>
             <li>
-                <p>
-                  <h6>  Menos sobrecarga </h6><br>
-                    Los contenedores requieren menos recursos del sistema que los entornos de máquinas virtuales
-                     tradicionales o de hardware porque no incluyen imágenes
+                <h6>  Menos sobrecarga </h6><br>
+                <p> Los contenedores requieren menos recursos del sistema que los entornos de máquinas virtuales tradicionales o de hardware porque no incluyen imágenes
                     del sistema operativo.
                 </p>
-
                 <h6>Mayor portabilidad </h6><br>
-                <p>Las aplicaciones que se ejecutan en contenedores se pueden poner
-                  en marcha fácilmente en sistemas operativos y plataformas de hardware diferentes. </p>
+                <p>Las aplicaciones que se ejecutan en contenedores se pueden poner en marcha fácilmente en sistemas operativos y plataformas de hardware diferentes. </p>
                 <h6>Funcionamiento mas constante</h6><br>
-                <p>Los equipos de DevOps saben que las aplicaciones en contenedores van
-                  a ejecutarse igual, independientemente de dónde se pongan en marcha.</p>
+                <p>Los equipos de DevOps saben que las aplicaciones en contenedores van a ejecutarse igual, independientemente de dónde se pongan en marcha.</p>
                 <h6>Mayor eficiencia</h6><br>
-                <p>Los contenedores permiten poner en marcha,
-                  aplicar parches o escalar las aplicaciones con mayor rapidez.</p>
+                <p>Los contenedores permiten poner en marcha, aplicar parches o escalar las aplicaciones con mayor rapidez.</p>
                 <h6>Mejor desarrollo de aplicaciones</h6><br>
                 <p>Los contenedores respaldan los esfuerzos ágiles y
                   de DevOps para acelerar los ciclos de desarrollo, prueba y producción.</p>
             </li>
         </ul>
-    </section>
-    <section id="Casos" class="container">
+      </div>
+      <div class="box-contenedor">
+
+
         <h2>Caso de uso de Contenedores</h2>
         <p>
             Los contenedores son una forma optimizada de crear, probar, poner en marcha y volver a poner en marcha aplicaciones en varios entornos, desde un
@@ -85,7 +94,18 @@
             <p>Los contenedores se ponen en marcha para dar soporte a uno o varios procesos parecidos que,
                a menudo, se ejecutan en segundo plano, como las funciones ETL o los lotes de tareas.</p>
         </ul>
-        </section>
 
+      </div>
+      <div class="b-1">
+      <div class="c-boton">
+        <a class="boton" href="/"><span>Imagenes</span></a>
+      </div>
+      </div>
+      <div class="b-2">
+        <div class="c-boton">
+        <a class="boton" href="/dockerfile"><span>Docker File</span></a>
+      </div>
+      </div>
+    </div>
 </body>
 </html>

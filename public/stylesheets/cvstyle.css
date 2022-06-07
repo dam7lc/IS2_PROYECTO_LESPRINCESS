@@ -1,20 +1,16 @@
-.cv{
-    padding: 0px;
-}
 
-h1
-{
-    font-family: 'Share Tech', sans-serif;
-    font-size: 35px;
-    font-weight: bold;
-    margin-top: 3%;
-    margin-bottom: auto;
-    color:black;
-    text-align: center;
-    background-color:#FFD24C;
+
+header{
+  font-family: 'Share Tech', sans-serif;
+  width: 100%;
+  height: 150px;
+  background: #8360c3;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, hsla(161, 61%, 46%, 0.616), hsla(261, 45%, 57%, 0.616)), url(../public/img/logo.jpeg);
+  background: linear-gradient(to right, hsla(161, 61%, 46%, 0.616), hsla(261, 45%, 57%, 0.616)), url(../public/img/logo.jpeg);
+  position: relative;
+  border-radius: 10px;
 }
-h2
-{
+h2{
     font-family: 'Share Tech', sans-serif;
     margin-top: 3%;
     color:black;
@@ -24,8 +20,7 @@ h2
 }
 
 
-p
-{
+p{
     font-family: 'Share Tech', sans-serif;
     margin-top: 2%;
     color:black;
@@ -34,57 +29,58 @@ p
     align: center;
     text-align:justify;
     font-size: 20px;
+    background: none;
 
 }
 
-body
-{
+body{
+    background: #FFEFBA;
+    /*
+    background: -webkit-linear-gradient(to right, #FFFFFF, #FFEFBA);
+    background: linear-gradient(to right, #FFFFFF, #FFEFBA);
 
     /*background-color: #42C2FF;
-    */
+
     background: url("../images/cv.jpg") no-repeat center fixed;
-    background-size: cover;
+    background-size: cover;*/
 
 }
-img
-{
+img{
     border-radius: 10px;
     align:center;
 }
-.grid-layout
-{
+.grid-layout{
   display: grid;
   grid-template-columns: auto auto;
   grid-template-rows: auto;
   grid-row-gap: 18px;
   grid-column-gap: 18px;
-
-
   width: 100%;
   height: 100%;
   margin: 0 auto;
-
   border-radius: 5px;
-
 }
 
-.box-a                      /*Texto inicial */
-{
+.box-header{
+  grid-column: 1/4;
+  background-color: none;
+}
+
+.box-a{                      /*Texto inicial */
 
   grid-column: 1/4;
   background-color: white;
   text-align: justify;
+  border-radius: 10px;
 
 }
-.box-b                      /*Imagen */
-{
+.box-b{                      /*Imagen */
   grid-column: 1/3;
   border-radius: 10px;
   /*background-color: white;*/
   text-align: justify;
 }
-.box-c                     /*Hipervinculos */
-{
+.box-c{                     /*Hipervinculos */
   grid-column: 3/4;
 
   border-radius: 10px;
@@ -92,11 +88,48 @@ img
   text-align: justify;
 
 }
-.box-d                      /*Texto */
-{
+.box-d{                      /*Texto */
   grid-column: 1/4;
   border-radius: 10px;
   background-color: white;
   text-align: justify;
+
+}
+
+header .textos-header{
+  padding-top: 38px;
+  display: flex;
+  height: 430px;
+  width: 100%;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+
+
+}
+
+.textos-header h1{
+    font-size: 50px;
+    color: #fff;
+
+}
+
+
+.wave{
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  border-radius: 10px;
+}
+
+.b-1{
+  grid-column: 1/2;
+  background-color: none;
+  margin-left: 45%
+}
+.b-2{
+  grid-column: 3/4;
+  background-color:none;
+  margin-left: 45%;
 
 }

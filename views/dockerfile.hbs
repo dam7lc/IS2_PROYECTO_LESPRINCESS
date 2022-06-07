@@ -1,19 +1,30 @@
 <link href="stylesheets/dfstyle.css" rel="stylesheet">
+<link rel="stylesheet" href="/stylesheets/boton-Sig.css">
+
 <body>
+    <header>
+
+      <section class="textos-header">
+          <h1 style="font-family: 'Share Tech', sans-serif;">Archivo Dockerfile</h1>
+      </section>
+      <div class="wave"  style="height: 75px; overflow: hidden;" ><svg viewBox="0 0 500 150" preserveAspectRatio="none"
+      style="height: 100%; width: 100%;"><path d="M0.00,49.98 C233.35,227.47 236.73,-41.92 500.00,49.98 L500.00,150.00 L0.00,150.00 Z"
+      style="stroke: none; fill: #f5cb8dab;"></path></svg></div>
+    </header>
     <div class="container">
+
         <div class="row">
             <div class="col-lg-6">
                 <div class="card mb-4 mt-5">
                     <a><img class="card-img-top" src="/images/dockerfile2.webp" alt="..." /></a>
                 </div>
 
-                
+
             </div>
 
             <div class="col-lg-6">
                 <div class="card mb-4 mt-5">
-                    <div class="card-header h3">Archivo Dockerfile</div>
-                    <div class="card-body lead">Un Dockerfile es un archivo de texto plano que contiene una serie de instrucciones necesarias para crear una imagen que, posteriormente, se convertirá en una sola aplicación utilizada para un determinado propósito. La base del funcionamiento de Docker es mediante Dockerfiles.
+                    <div class="card-body lead"; style="font-family: 'Share Tech', sans-serif";>Un Dockerfile es un archivo de texto plano que contiene una serie de instrucciones necesarias para crear una imagen que, posteriormente, se convertirá en una sola aplicación utilizada para un determinado propósito. La base del funcionamiento de Docker es mediante Dockerfiles.
 
                     </div>
                 </div>
@@ -24,33 +35,33 @@
                 <div class="card mb-4">
                     <div class="card-body">
                         <h2 class="card-title h4">Introduccion</h2>
-                        <p class="card-text lead">Antes de hablar de los Dockerfiles vamos a hablar un poco del comando docker 
-                                                build que es el que ejecutaremos una vez tenemos las instrucciones a seguir 
+                        <p class="card-text lead">Antes de hablar de los Dockerfiles vamos a hablar un poco del comando docker
+                                                build que es el que ejecutaremos una vez tenemos las instrucciones a seguir
                                                 en un archivo.</p>
-                      
+
                         <p class="card-text lead">El comando docker build nos sirve para crear una imagen en base a un Dockerfile</p>
-                        
+
                         <p class="card-text lead">El uso normal del comando es: docker build . lo que nos va a generar una
                                                 imagen en base a un Dockerfile situado en esa misma carpeta</p>
-                        
-                        <p class="card-text lead">El comando docker build arma una imágen siguiendo las instrucciones de un 
-                                                DockerFile que se puede encontrar en el directorio actual o un repositorio. 
-                                                La creación de la imágen es ejecutada por el daemon de Docker. Es importante 
-                                                tener en cuenta que docker build le manda todo el contexto del directorio actual 
-                                                al daemon, por lo que es buena práctica colocar el DockerFile en un directorio 
-                                                limpio y agregar los archivos necesarios en ese directorio en caso de ser 
+
+                        <p class="card-text lead">El comando docker build arma una imágen siguiendo las instrucciones de un
+                                                DockerFile que se puede encontrar en el directorio actual o un repositorio.
+                                                La creación de la imágen es ejecutada por el daemon de Docker. Es importante
+                                                tener en cuenta que docker build le manda todo el contexto del directorio actual
+                                                al daemon, por lo que es buena práctica colocar el DockerFile en un directorio
+                                                limpio y agregar los archivos necesarios en ese directorio en caso de ser
                                                 necesario.</p>
 
-                        <p class="card-text lead">El Docker Daemon corre las instrucciones en un Dockerfile linea por linea y 
-                                                va lanzando los resultados en pantalla. Un punto importante es que cada 
-                                                instrucción es ejecutada en nuevas imágenes, hasta que muestra el ID de la 
-                                                imágen resultante una vez finalizada las instrucciones, el daemon irá haciendo 
+                        <p class="card-text lead">El Docker Daemon corre las instrucciones en un Dockerfile linea por linea y
+                                                va lanzando los resultados en pantalla. Un punto importante es que cada
+                                                instrucción es ejecutada en nuevas imágenes, hasta que muestra el ID de la
+                                                imágen resultante una vez finalizada las instrucciones, el daemon irá haciendo
                                                 una limpieza automáticamente de las imágenes intermedias.</p>
 
-                        <p class="card-text lead">Ahora, viene otra pregunta, como nos ayuda todo esto de las Imágenes intermedias 
-                                                o Cache? Si por alguna razón la creación de la imágen falla, ya sea por un comando 
+                        <p class="card-text lead">Ahora, viene otra pregunta, como nos ayuda todo esto de las Imágenes intermedias
+                                                o Cache? Si por alguna razón la creación de la imágen falla, ya sea por un comando
                                                 mal digitado en el archivo, o lo que sea, cuando corregimos el Dockerfile, este no
-                                                iniciará todo el proceso nuevamente, sino, que hará uso de las imágenes 
+                                                iniciará todo el proceso nuevamente, sino, que hará uso de las imágenes
                                                 intermedias, y continuará la creación en el punto donde falló.</p>
 
                     </div>
@@ -63,21 +74,21 @@
                     <a><img class="card-img-top" src="/images/dockerfile.png" alt="..." /></a>
                     <div class="card-body">
                         <h2 class="card-title h4">¿Qué es un Dockerfile?</h2>
-                        <p class="card-text lead">Es un documento de texto que contiene todos los comandos que vamos a ejecutar a 
+                        <p class="card-text lead">Es un documento de texto que contiene todos los comandos que vamos a ejecutar a
                                                 la hora de crear nuestra imagen.
-                        </p> 
-                        <p class="card-text lead">Los Dockerfile son archivos que se utilizan para crear imágenes Docker mediante 
+                        </p>
+                        <p class="card-text lead">Los Dockerfile son archivos que se utilizan para crear imágenes Docker mediante
                                                 programación.
                         </p>
-                        <p class="card-text lead">Le permiten crear de forma rápida y reproducible una imagen de Docker, por lo que 
-                                                son útiles para colaborar. Ademas de que contienen instrucciones para construir una 
-                                                imagen de Docker. 
-                        </p>           
-                        <p class="card-text lead">Cada instrucción se escribe en una fila y se da en la forma "INSTRUCTION""argument(s)". 
-                                                Los archivos Dockerfile se utilizan para crear imágenes de Docker utilizando el comando de 
-                                                docker build 
+                        <p class="card-text lead">Le permiten crear de forma rápida y reproducible una imagen de Docker, por lo que
+                                                son útiles para colaborar. Ademas de que contienen instrucciones para construir una
+                                                imagen de Docker.
                         </p>
-                        <p class="card-text lead">Se podría decir que nuestro Dockerfile va a ser la receta que Docker va a 
+                        <p class="card-text lead">Cada instrucción se escribe en una fila y se da en la forma "INSTRUCTION""argument(s)".
+                                                Los archivos Dockerfile se utilizan para crear imágenes de Docker utilizando el comando de
+                                                docker build
+                        </p>
+                        <p class="card-text lead">Se podría decir que nuestro Dockerfile va a ser la receta que Docker va a
                                                 seguir para poder crear nuestra imagen
                         </p>
 
@@ -94,8 +105,8 @@
                             <h2 class="card-title h4">Ejemplo</h2>
                             <p class="card-text lead mb-5">Un Dockerfile mínimo se ve así       -------------->
                             </p>
-                            <p class="card-text lead mt-5">Esto le indicará a Docker que genere una imagen basada en Alpine ( FROM ), 
-                            una distribución mínima para contenedores, y que ejecute un comando específico ( CMD ) al ejecutar 
+                            <p class="card-text lead mt-5">Esto le indicará a Docker que genere una imagen basada en Alpine ( FROM ),
+                            una distribución mínima para contenedores, y que ejecute un comando específico ( CMD ) al ejecutar
                             la imagen resultante.
                             </p>
                         </div>
@@ -116,6 +127,18 @@
 
 
 
+        </div>
+        <div class="grid-layout">
+          <div class="b-1">
+          <div class="c-boton">
+            <a class="boton" href="/contenedordocker"><span>Contenedores</span></a>
+          </div>
+          </div>
+          <div class="b-2">
+            <div class="c-boton">
+            <a class="boton" href="/directivas"><span>Directivas</span></a>
+          </div>
+          </div>
         </div>
     </div>
 </body>

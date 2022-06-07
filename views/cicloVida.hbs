@@ -1,11 +1,26 @@
 <link href="stylesheets/cvstyle.css" rel="stylesheet">
 <link href="stylesheets/boton.css" rel="stylesheet">
+<link href="stylesheets/boton-Sig.css" rel="stylesheet">
 <link rel="preconnect" href="https://fonts.gstatic.com">
 <link href="https://fonts.googleapis.com/css2?family=Share+Tech&display=swap" rel="stylesheet">
 
 
-  <h1>Ciclos de vida de un contenedor</h1>
+
+
   <div class="grid-layout">
+
+    <div class="box-header">
+      <header>
+
+          <section class="textos-header">
+              <h1>Ciclos de vida de un contenedor</h1>
+          </section>
+          <div class="wave"  style="height: 75px; overflow: hidden;" ><svg viewBox="0 0 500 150" preserveAspectRatio="none"
+          style="height: 100%; width: 100%;"><path d="M0.00,49.98 C233.35,227.47 236.73,-41.92 500.00,49.98 L500.00,150.00 L0.00,150.00 Z"
+          style="stroke: none; fill: #f5cb8dab;"></path></svg></div>
+      </header>
+
+    </div>
     <div class="box-a">
       <p>El ciclo de vida del contenedor son las diferentes etapas por las que recorre un contenedor
       Docker con distintos comandos. Comienza desde que hacemos la descarga desde Dokcer
@@ -17,8 +32,8 @@
       </div>
     </div>
     <div class="box-c">
-      <h2 style="color:white; border-radius: 5px; font-size: 28px;">Comandos Docker en el ciclo de vida</h2>
-      <div class="c-boton">
+      <h2 style="color:black; border-radius: 5px; font-size: 28px;">Comandos Docker en el ciclo de vida</h2>
+      <div class="a-boton">
 
         <a class="boton" href="#docker-create"><span>Docker Create</span></a>
         <a class="boton" href="#docker-run"><span>Docker Run</span></a>
@@ -37,9 +52,9 @@
       <h2>Docker Create</h2>
       <p>El comando docker create, crea una capa de contenedor grabable sobre la imagen especificada y la prepara para ejecutar con un comando especificado. La identificación del contenedor se imprime en STDOUT. Esto es similar a docker run -d excepto que el contenedor nunca se inicia. Luego puede usar el docker start para iniciar el contenedor en cualquier momento.</p>
       <p>Esto es útil cuando desea crear una configuración de contenedor con anticipación para que esté lista, luego ejecutarla cuando la necesite. El estado inicial del nuevo contenedor es created.</p>
-      
+
       <!--Run -->
-      <h2 id="docker-run" style="background-color:#42C2FF; color:#42C2FF">""</h2>
+      <h2 id="docker-run" style="background-color:#4d0686; color:#4d0686">""</h2>
       <h2 >Docker Run</h2>
       <p>El comando docker run primero crea una capa de contenedor grabable sobre la imagen especificada y luego la inicia usando el comando especificado. Es decir, la ejecución de Docker es equivalente a la API /containers/create then /containers/(id)/start. Un contenedor detenido se puede reiniciar con todos sus cambios anteriores intactos usando Docker Start. Vea docker ps -a para ver una lista de todos los contenedores.</p>
       <h2> Uso </h2>
@@ -62,7 +77,7 @@
         <img src="/images/d-run3.png" alt="Docker run3">
       </div>
       <!--Start-->
-      <h2 id="docker-start" style="background-color:#42C2FF; color:#42C2FF">""</h2>
+      <h2 id="docker-start" style="background-color:#4d0686; color:#4d0686">""</h2>
       <h2>Docker Start</h2>
       <p > Iniciar uno o más contenedores detenidos.</p>
       <h2>Uso</h2>
@@ -75,7 +90,7 @@
         <img src="/images/d-start2.png" alt="Docker Start2">
       </div>
       <!--Stop-->
-      <h2 id="docker-stop" style="background-color:#42C2FF; color:#42C2FF">""</h2>
+      <h2 id="docker-stop" style="background-color:#4d0686; color:#4d0686">""</h2>
       <h2 >Docker Stop</h2>
       <p>Detener uno o más contenedores en ejecución.</p>
       <h2>Uso</h2>
@@ -90,7 +105,7 @@
       </div>
       <p>Observamos el ID del contenedor por lo que el comando se ejecutó de manera exitosa. Ahora el contenedor paso al estado EXITED</p>
       <!--Restart-->
-      <h2 id="docker-restart" style="background-color:#42C2FF; color:#42C2FF">""</h2>
+      <h2 id="docker-restart" style="background-color:#4d0686; color:#4d0686">""</h2>
       <h2>Docker Restart</h2>
       <p>Detener uno o más contenedores en ejecución.</p>
       <h2>Uso</h2>
@@ -103,7 +118,7 @@
         <img src="/images/d-restart2.png" alt="Docker restart2">
       </div>
       <!--Pause-->
-      <h2 id="docker-pause" style="background-color:#42C2FF; color:#42C2FF">""</h2>
+      <h2 id="docker-pause" style="background-color:#4d0686; color:#4d0686">""</h2>
       <h2 >Docker Pause</h2>
       <p>El comando docker pause suspende todos los procesos en los contenedores especificados. En Linux, esto usa el congelador cgroup. Tradicionalmente, cuando se suspende un proceso, se utiliza la señal SIGSTOP, que se puede observar cuando el proceso se suspende. Con el congelador cgroup, el proceso no es consciente y no puede capturar, que se está suspendiendo, y posteriormente se reanuda. </p>
       <h2>Uso</h2>
@@ -117,7 +132,7 @@
       </div>
       <p>Observamos que se ejecutó de manera exitosa mostrando el ID.</p>
       <!--Unpause-->
-      <h2 id="docker-unpause" style="background-color:#42C2FF; color:#42C2FF">""</h2>
+      <h2 id="docker-unpause" style="background-color:#4d0686; color:#4d0686">""</h2>
       <h2 >Docker Unpause</h2>
       <p> El comando docker unpause anula la suspensión de todos los procesos en los contenedores especificados. En Linux, hace esto usando el congelador cgroup.</p>
       <h2>Uso</h2>
@@ -130,7 +145,7 @@
         <img src="/images/d-unpause2.png" alt="Docker unpause2">
       </div>
       <!--rm-->
-      <h2 id="docker-rm" style="background-color:#42C2FF; color:#42C2FF">""</h2>
+      <h2 id="docker-rm" style="background-color:#4d0686; color:#4d0686">""</h2>
       <h2>Docker RM</h2>
       <p>Retire uno o más contenedores.</p>
       <h2>Uso</h2>
@@ -145,5 +160,14 @@
        </div>
        <p>Vemos que efectivamente se ejecutó de manera correcta el comando por lo que pasamos al último estado DELETED</p>
     </div>
-
+    <div class="b-1">
+    <div class="c-boton">
+      <a class="boton" href="/directivas"><span>Directivas</span></a>
+    </div>
+    </div>
+    <div class="b-2">
+      <div class="c-boton">
+      <a class="boton" href="/"><span>Inicio</span></a>
+    </div>
+    </div>
   </div>

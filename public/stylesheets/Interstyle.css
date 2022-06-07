@@ -70,31 +70,45 @@ p{
 
   font-weight:bold;
 }
-button{
-  padding: 0 5px;
+.boton{
+  padding: 12px;
   width: 140px;
   height: 40px;
   border: 0;
   outline: none;
-  color: #fff;
+  color: red;
   font-weight: 500;
   border: none;
   cursor: pointer;
   background-color: #ff4321;
   border-radius: 25px;
   transition: width 0.5s;
+  align-items: center;
+  text-align: center;
+  text-decoration: none;
+  text-decoration-color: none;
+
 }
-button img{
+.boton span{
+  position: relative;
+  z-index: 2;
+  transition: .3s ease all;
+  color: black;
+  text-decoration-color: none;
+  text-decoration: none;
+}
+.boton img{
   display: none;
 }
-button:hover img{
+.boton:hover img{
   display: block;
 }
-button:hover{
+.boton:hover{
   display: flex;
   align-items: center;
   justify-content: space-between;
   width: 160px;
+  text-decoration-color: none;
 }
 
 .container .emp{
@@ -115,15 +129,15 @@ button:hover{
 }
 .icons{
   position: absolute
-  bottom: 8%;
+  bottom: 100%;
   padding-top: 150px;
 }
-.icons i{
+.icons img{
   font-size: 2.5rem;
   padding: 0 10px;
   cursor: pointer;
 }
-.icons i:hover{
+.icons img:hover{
   color: #ff4321;
   transition: all 0.3s ease 0s;
 }

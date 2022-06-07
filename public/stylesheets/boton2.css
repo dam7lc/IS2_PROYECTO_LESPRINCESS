@@ -1,11 +1,11 @@
-.a-boton{
+.d-boton{
   width: 100%;
   display: grid;
-  grid-template-columns: auto auto;
+  grid-template-columns: auto auto auto auto auto auto auto auto auto;
 
   grid-column-gap: 0px;
   grid-row-gap: 10px;
-  padding-left:70px;
+  padding-left:0px;
   padding-top:10px;
 
 }
@@ -52,6 +52,6 @@
 
 }
 .boton:hover::after{
-  transform: scale(400);
+  transform: scale(500);
   background: #FFC371;
 }
