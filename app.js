@@ -4,7 +4,13 @@ var path = require('path');
 var cookieParser = require('cookie-parser');
 var logger = require('morgan');
 var mongoose = require('mongoose');
-mongoose.connect('mongodb+srv://comics1234:comics1234@cluster0.mof70.mongodb.net/comics?retryWrites=true&w=majority',{useNewUrlParser:true});
+const uri = `mongodb+srv://admin:proyecto@cluster0.lcznb.mongodb.net/IS2?retryWrites=true&w=majority`;
+
+mongoose.connect(uri,
+  { useNewUrlParser: true, useUnifiedTopology: true }
+)
+  .then(() => console.log('Conexión exitosa al cluster mongodb'))
+  .catch(e => console.log(e))
 
 var indexRouter = require('./routes/index');
 var infoEquipoRouter = require('./routes/infoEquipo');
