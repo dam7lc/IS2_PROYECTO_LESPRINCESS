@@ -3,6 +3,8 @@ var express = require('express');
 var path = require('path');
 var cookieParser = require('cookie-parser');
 var logger = require('morgan');
+var mongoose = require('mongoose');
+mongoose.connect('mongodb+srv://comics1234:comics1234@cluster0.mof70.mongodb.net/comics?retryWrites=true&w=majority',{useNewUrlParser:true});
 
 var indexRouter = require('./routes/index');
 var infoEquipoRouter = require('./routes/infoEquipo');
@@ -12,6 +14,7 @@ var cicloVidaRouter = require('./routes/cicloVida');
 var introduccionRouter = require('./routes/introduccion');
 var directivasRouter = require('./routes/directivas');
 var imagenesDockerRouter = require('./routes/imagenesDocker');
+var comicsRouter = require('./routes/comics');
 
 var app = express();
 
@@ -33,6 +36,7 @@ app.use('/cicloVida', cicloVidaRouter);
 app.use('/introduccion', introduccionRouter);
 app.use('/directivas', directivasRouter);
 app.use('/imagenesDocker', imagenesDockerRouter);
+app.use('/comics', comicsRouter);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
