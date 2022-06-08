@@ -33,6 +33,7 @@ router.get('/:idComi',  (req,res,next)=>{
   } );
   
 
+
 router.post('/', async(req,res,next)=>{
     if(!req.body.id || !req.body.titulo || !req.body.autor || !req.body.editorial || !req.body.aniosalida || !req.body.genero || !req.body.resumen){
         res.status(500).send({message: 'Error: Por favor verifique que el body contiene id, titulo, autor, editorial, aniosalida, genero y resumen'})
@@ -71,6 +72,10 @@ router.post('/', async(req,res,next)=>{
 
 });
 
+router.post('/:idComi', (req,res,next)=>{
+    res.status(404).send({message: '404: Ruta invalida para post'})
+});
+
 router.put('/:idComi', async(req,res,next)=>{
     var params = req.body;
     var id=req.params.idComi;
@@ -98,6 +103,10 @@ router.put('/:idComi', async(req,res,next)=>{
     }
 });
 
+router.put('/', (req,res) =>{
+    res.status(405).send({message: 'Acción no permitida: Ruta invalida para PUT'})
+});
+
 router.patch('/:idComi',(req,res,next)=>{
     var params = req.body;
     var id=req.params.idComi;
@@ -108,6 +117,10 @@ router.patch('/:idComi',(req,res,next)=>{
 			res.status(200).send(com);	
 		}
     });
+});
+
+router.patch('/', (req,res) =>{
+    res.status(405).send({message: 'Acción no permitida: Ruta invalida para PATCH'})
 });
 
 router.delete('/:idComi', async(req,res,next)=>{
@@ -124,6 +137,10 @@ router.delete('/:idComi', async(req,res,next)=>{
         res.status(500).send({message: 'Error: No existe esa ID en la base de datos, por favor verifique'});
     }
     
+});
+
+router.delete('/', (req,res) =>{
+    res.status(405).send({message: 'Acción no permitida: Ruta invalida para DELETE'})
 });
 
 
