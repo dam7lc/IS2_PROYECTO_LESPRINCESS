@@ -5,6 +5,8 @@ const comics = require('../modelos/comics');
 var Comic = require('../modelos/comics');
 
  /*GET users listing. */
+ 
+
 
 
 router.get('/', function(req, res, next){
@@ -123,4 +125,6 @@ router.delete('/:idComi', async(req,res,next)=>{
     }
     
 });
+
+
 module.exports = router;
